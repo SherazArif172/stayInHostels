@@ -1,6 +1,6 @@
 "use client";
 import { Menu, X, Facebook, Instagram, Twitter, Handshake } from "lucide-react";
-import navData from "../../data/navbar.json";
+import navData from "../../data/mobileNav.json";
 import Link from "next/link";
 import navImg from "../../../public/navbar/stay in hostel 1.png";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="flex items-center lg:hidden">
+    <div className="flex items-center lg:hidden ">
       <Menu
         className="h-9 w-9 self-center text-primary cursor-pointer"
         strokeWidth={4}
@@ -23,7 +23,7 @@ const MobileNav = () => {
 
       <aside className="">
         <div
-          className={`  h-full bg-background w-full overflow-y-auto  overflow-x-hidden absolute -left-full top-0 px-3 py-4 ${
+          className={`h-full bg-background w-full overflow-y-auto  absolute -left-full top-0 px-3 py-4 ${
             isOpen ? "left-0" : "-left-full"
           } transition-all duration-300 ease-in-out `}
         >
@@ -48,18 +48,18 @@ const MobileNav = () => {
                 <Link href={nav.path}>{nav.title}</Link>
               </li>
             ))}
-            <div className="flex gap-3">
+            <div className="flex gap-3 mt-8">
               <Link href={"/"}>
                 {" "}
-                <Instagram className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out" />
+                <Instagram className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
               <Link href={"/"}>
                 {" "}
-                <Facebook className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out" />
+                <Facebook className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
 
               <Link href={"/"}>
-                <Twitter className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out" />
+                <Twitter className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
             </div>
           </ul>
