@@ -14,7 +14,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="flex items-center lg:hidden ">
+    <div className="flex items-center lg:hidden bg-white z-20">
       <Menu
         className="h-9 w-9 self-center text-primary cursor-pointer"
         strokeWidth={4}
