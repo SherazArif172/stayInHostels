@@ -43,8 +43,11 @@ const MobileNav = () => {
             </Link>
           </div>
           <ul className="flex flex-col gap-5  w-full  mt-8 pl-3 overflow-y-auto">
-            {navData.map((nav) => (
-              <li className="relative w-fit group  text-foreground/70 text-lg font-semibold">
+            {navData.map((nav, index) => (
+              <li
+                className="relative w-fit group  text-foreground/70 text-lg font-semibold"
+                key={index}
+              >
                 <Link href={nav.path}>{nav.title}</Link>
               </li>
             ))}

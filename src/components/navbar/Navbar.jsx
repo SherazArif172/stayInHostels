@@ -28,8 +28,11 @@ const Navbar = () => {
 
         <div className="lg:block hidden  bg-white transition-all duration-300  self-center">
           <ul className="flex items-center gap-16 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
-            {navData.map((nav) => (
-              <li className="relative w-fit group  text-foreground/70 hover:text-primary transition-all duration-300 ">
+            {navData.map((nav, index) => (
+              <li
+                className="relative w-fit group  text-foreground/70 hover:text-primary transition-all duration-300 "
+                key={index}
+              >
                 <Link href={nav.path}>
                   {nav.title}
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
