@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Heroimg from "../../../../../public/hero/hero.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { CalendarDays, ChevronDown, User } from "lucide-react";
+import { Blocks, CalendarDays, ChevronDown, User } from "lucide-react";
 import { motion } from "framer-motion";
+import { Calendar } from "@/components/ui/calendar";
 
 const Hero = () => {
   return (
@@ -48,6 +49,8 @@ const Hero = () => {
 export default Hero;
 
 const Booking = () => {
+  const [setshown, setsetshown] = useState(false);
+
   return (
     <motion.div
       className="lg:flex hidden rounded-md  shadow-custom w-[829px]  pl-14 absolute bottom-44 left-16 z-10 bg-background "
@@ -55,12 +58,24 @@ const Booking = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-full py-4 ">
+      <div
+        className="w-full py-4 "
+        onClick={() => {
+          setsetshown(!setshown);
+        }}
+      >
         <p className="font-semibold">Check-in</p>
-        <div className="flex gap-4 mt-2">
+        <div className="flex gap-4 mt-2 cursor-pointer">
           <CalendarDays className="text-primary" />
           <p>Add date</p>
           <ChevronDown />
+        </div>
+        <div
+          className={`${
+            setshown ? "block" : "hidden"
+          } absolute top-20 bg-background`}
+        >
+          {/* <Calendar /> */}
         </div>
       </div>
       <div className="w-full my-4 border-l-2  pl-7">
