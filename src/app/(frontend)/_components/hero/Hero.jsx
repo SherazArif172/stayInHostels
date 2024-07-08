@@ -38,7 +38,12 @@ const Hero = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <Image src={Heroimg} fill className="object-cover w-full h-full" />
+        <Image
+          src={Heroimg}
+          fill
+          className="object-cover w-full h-full"
+          alt="image"
+        />
       </motion.div>
 
       <Booking />

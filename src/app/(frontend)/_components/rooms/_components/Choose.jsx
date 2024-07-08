@@ -3,7 +3,7 @@ import React from "react";
 
 const Choose = () => {
   return (
-    <div className=" w-[360px] mt-9 shadow-custom p-11">
+    <div className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11">
       <p className="text-4xl font-bold ">Stay Longer, Save More</p>
       <p className="text-lg mt-4">
         It&apos;s simple the longer you stay, the more you save!

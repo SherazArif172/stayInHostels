@@ -8,9 +8,9 @@ import Choose from "./Choose";
 
 const Card = () => {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 flex-wrap justify-center lg:mx-0 mx-5">
       {Cards.map((data) => (
-        <div className=" w-[360px] mt-9 shadow-custom" key={data.id}>
+        <div className=" lg:max-w-[360px]  mt-9 shadow-custom" key={data.id}>
           <div className="relative">
             <Image
               src={data.image}
@@ -36,8 +36,8 @@ const Card = () => {
                 <p className="text-lg ">{data.beds} Bed</p>
               </div>
             </div>
-            <Link href={"#"} className="flex text-blue-900">
-              see availablity <ArrowRight />
+            <Link href={"#"} className="flex gap-2 text-blue-900">
+              see availablity <ArrowRight className="w-4" />
             </Link>
           </div>
         </div>
