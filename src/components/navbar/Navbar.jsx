@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
             ))}
 
-            <Button className="">
+            <Button className=" text-primary bg-primary-cstm font-semibold">
               <Link href="/">Contact Us</Link>
             </Button>
           </ul>

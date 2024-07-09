@@ -8,13 +8,16 @@ import Choose from "./Choose";
 
 const Card = () => {
   return (
-    <div className="flex gap-6 flex-wrap justify-center lg:mx-0 mx-5">
+    <div className="grid md:grid-cols-3 grid-cols-1  gap-6 justify-center lg:mx-0 mx-5 ">
       {Cards.map((data) => (
-        <div className=" lg:max-w-[360px]  mt-9 shadow-custom" key={data.id}>
+        <div
+          className=" lg:max-w-[360px]  mt-9 shadow-custom  rounded-md"
+          key={data.id}
+        >
           <div className="relative">
             <Image
               src={data.image}
-              className="relative bg-cover"
+              className="relative bg-cover rounded-t-md"
               width={700}
               height={700}
               alt="image"

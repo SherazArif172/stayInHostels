@@ -3,7 +3,7 @@ import React from "react";
 
 const Choose = () => {
   return (
-    <div className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11">
+    <div className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11 bg-primary text- rounded-md">
       <p className="text-4xl font-bold ">Stay Longer, Save More</p>
       <p className="text-lg mt-4">
         It&apos;s simple the longer you stay, the more you save!
@@ -13,7 +13,9 @@ const Choose = () => {
         <br />
         Save up to 20% off the nightly rate on stays between 7-14 nights
       </p>
-      <Button className="mt-4 px-4 py-6">Choose room</Button>
+      <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold">
+        Choose room
+      </Button>
     </div>
   );
 };

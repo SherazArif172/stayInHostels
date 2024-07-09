@@ -4,6 +4,7 @@ import Hero from "./(frontend)/_components/hero/Hero";
 import Rooms from "./(frontend)/_components/rooms/Rooms";
 // import HeroMain from "./(frontend)/_components/hero/HeroMain";
 import Facilities from "./(frontend)/_components/facilities/Facilities";
+import Reviews from "./(frontend)/_components/reviews/Reviews";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Rooms />
       <Facilities />
+      <Reviews />
     </main>
   );
 }
