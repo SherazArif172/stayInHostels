@@ -4,7 +4,8 @@ import Hero from "./(frontend)/_components/hero/Hero";
 import Rooms from "./(frontend)/_components/rooms/Rooms";
 // import HeroMain from "./(frontend)/_components/hero/HeroMain";
 import Facilities from "./(frontend)/_components/facilities/Facilities";
-import Reviews from "./(frontend)/_components/reviews/Reviews";
+// import Reviews from "./(frontend)/_components/reviews/Reviews";
+import Booking from "./(frontend)/_components/booking/Booking";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <Hero />
       <Rooms />
       <Facilities />
-      <Reviews />
+      {/* <Reviews /> */}
+      <Booking />
     </main>
   );
 }

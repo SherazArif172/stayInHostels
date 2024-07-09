@@ -13,7 +13,7 @@ const Reviews = () => {
         <p className="md:text-4xl text-2xl font-semibold ">
           What our guests say
         </p>
-        <div className="mt-12 shadow-custom ">
+        <div className="mt-12 shadow-custom p-16">
           <div className="flex gap-2">
             {Array.from({ length: 5 })
               .fill(1)
