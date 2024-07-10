@@ -45,7 +45,13 @@ const Booking = () => {
         </div>
       </div>
       <div className="w-1/2">
-        <Image src={Bookingg} width={700} height={700} className="w-5/6" />
+        <Image
+          src={Bookingg}
+          width={700}
+          height={700}
+          className="w-5/6"
+          alt="image"
+        />
       </div>
     </div>
   );

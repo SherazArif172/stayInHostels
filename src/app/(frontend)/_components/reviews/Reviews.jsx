@@ -7,7 +7,13 @@ const Reviews = () => {
   return (
     <div className="flex py-28">
       <div className="w-1/2">
-        <Image src={GuestSays} width={800} height={800} className="" />
+        <Image
+          src={GuestSays}
+          width={800}
+          height={800}
+          className=""
+          alt="image"
+        />
       </div>
       <div className="w-1/2 p-16">
         <p className="md:text-4xl text-2xl font-semibold ">
@@ -17,8 +23,12 @@ const Reviews = () => {
           <div className="flex gap-2">
             {Array.from({ length: 5 })
               .fill(1)
-              .map((_) => (
-                <Star className="text-orange-400 fill-orange-400" size={20} />
+              .map((_, index) => (
+                <Star
+                  key={index}
+                  className="text-orange-400 fill-orange-400"
+                  size={20}
+                />
               ))}
           </div>
           <p className="mt-3">
