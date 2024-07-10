@@ -6,6 +6,7 @@ import Rooms from "./(frontend)/_components/rooms/Rooms";
 import Facilities from "./(frontend)/_components/facilities/Facilities";
 // import Reviews from "./(frontend)/_components/reviews/Reviews";
 import Booking from "./(frontend)/_components/booking/Booking";
+import Blogs from "./(frontend)/_components/blogs/blogs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Facilities />
       {/* <Reviews /> */}
       <Booking />
+      <Blogs />
     </main>
   );
 }
