@@ -1,0 +1,26 @@
+[
+  {
+    "topic": "Travel",
+    "image": "/blogs/image1.webp",
+    "title": "How to cure wanderlust without leaving your home",
+    "description": "Ultrices gravida dictum fusce ut placer orci nulla pellentesque. Senect et netus et malesuada",
+    "date": "June 16, 2021",
+    "views": "120 views"
+  },
+  {
+    "topic": "Tourist Guide",
+    "image": "/blogs/image2.webp",
+    "title": "Yoga Hostels to soothe your mind and nomadic soul",
+    "description": "Ultrices gravida dictum fusce ut placer orci nulla pellentesque. Senect et netus et malesuada",
+    "date": "June 16, 2021",
+    "views": "120 views"
+  },
+  {
+    "topic": "Communication",
+    "image": "/blogs/image3.webp",
+    "title": "What happens when you travel with strangers?",
+    "description": "Euismod quis viverra nibh cras pulvinar mattis nunc. Leo duis ut diam quam. Sed velit dignissim",
+    "date": "June 16, 2021",
+    "views": "120 views"
+  }
+]
