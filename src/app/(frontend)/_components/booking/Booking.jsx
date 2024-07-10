@@ -2,10 +2,11 @@ import { Hotel } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import Bookingg from "../../../../../public/booking/booking.webp";
+import { Button } from "@/components/ui/button";
 
 const Booking = () => {
   return (
-    <div className="flex mt-28">
+    <div className="flex my-28 relative w-full">
       <div className="p-16 w-1/2">
         <p className="md:text-4xl text-2xl font-semibold ">
           Find suitable budget accommodation
@@ -44,17 +45,33 @@ const Booking = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 relative aspect-[12/12] overflow-hidden">
         <Image
           src={Bookingg}
-          width={700}
-          height={700}
-          className="w-5/6"
+          fill
+          className=" object-cover w-5/6  hover:scale-110 duration-1000"
           alt="image"
         />
+      </div>
+      <div className="absolute top-72 right-[470px]">
+        <Family />
       </div>
     </div>
   );
 };
 
 export default Booking;
+
+const Family = () => {
+  return (
+    <div className="border shadow-custom w-80 bg-white p-14 rounded-lg">
+      <p className="font-bold text-xl">Family Room with Private Bathroom</p>
+      <p className="text-lg mt-3">
+        <span className="text-5xl font-semibold">$149</span>/ 1 night
+      </p>
+      <Button className="bg-primary-cstm text-primary font-bold mt-3">
+        see availability
+      </Button>
+    </div>
+  );
+};
