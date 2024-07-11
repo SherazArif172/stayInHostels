@@ -1,10 +1,10 @@
-import { Phone } from "lucide-react";
+import { Clock, Mail, MailOpen, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const Contacts = () => {
   return (
-    <div className="flex lg:flex-row flex-col max-w-7xl m-auto py-16 lg:gap-0 gap-8 lg:px-0 px-4">
+    <div className="flex lg:flex-row flex-col max-w-7xl m-auto pt-16 lg:gap-0 gap-8 lg:px-0 px-4">
       <div className="lg:px-16 self-center w-full">
         <p className="text-4xl font-semibold md:text-left text-center">
           Contacts
@@ -31,7 +31,7 @@ const Contacts = () => {
             </div>
             <div className="flex justify-center items-center gap-5">
               <div className="p-7 bg-primary-cstm rounded-lg">
-                <Phone
+                <MailOpen
                   className="self-center text-primary w-7 h-7"
                   strokeWidth={1.5}
                 />
@@ -59,7 +59,7 @@ const Contacts = () => {
           <div className="flex md:flex-row flex-col gap-7 mt-6">
             <div className="flex justify-center items-center gap-5">
               <div className="p-7 bg-primary-cstm rounded-lg">
-                <Phone
+                <Clock
                   className="self-center text-primary w-7 h-7"
                   strokeWidth={1.5}
                 />
@@ -74,15 +74,16 @@ const Contacts = () => {
             </div>
             <div className="flex justify-center items-center gap-5">
               <div className="p-7 bg-primary-cstm rounded-lg">
-                <Phone
+                <MapPin
                   className="self-center text-primary w-7 h-7"
                   strokeWidth={1.5}
                 />
               </div>
               <div className="w-44">
-                <p className="text-2xl font-semibold">Phone</p>
+                <p className="text-2xl font-semibold">Location</p>
                 <p className="mt-1">
-                  (329) 580-7077 <br /> (650) 382-5020
+                  Everyday <br />
+                  10 am — 20 pm
                 </p>
               </div>
             </div>
