@@ -6,38 +6,38 @@ import { Facebook, Instagram, Linkedin, MapPin, Twitter } from "lucide-react";
 
 const footer = () => {
   return (
-    <footer className="text-white bg-primary grid grid-cols-4 justify-center items-center py-16 px-16 w-full">
+    <footer className="text-white bg-primary grid lg:grid-cols-4 md:grid-cols-2 md:gap-7 gap-4   py-16 md:px-16 px-4 w-full">
       <div className="w-fit flex justify-center flex-col">
         <div className="flex items-center gap-2">
           <Image src={Imagee} width={70} height={70} alt="image" />
           <p className="text-3xl self-center font-bold">Hosteller</p>
         </div>
-        <p className="text-lg mt-5">
+        <p className="text-lg md:mt-5 mt-3">
           Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
           consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
           placer orci nulla pellentesque
         </p>
       </div>
-      <div className="w-fit flex justify-center items-center flex-col">
+      <div className="  flex justify-center flex-col ">
         <p className="text-2xl font-semibold">Quick links</p>
-        <ul className="flex flex-col gap-3 mt-6">
-          <li className="hover:text-primary-cstm duration-300">
+        <ul className="flex flex-col gap-3 md:mt-6 mt-3">
+          <li className="hover:text-primary-cstm duration-300 w-fit">
             <Link href="/">Home</Link>
           </li>
-          <li className="hover:text-primary-cstm duration-300">
+          <li className="hover:text-primary-cstm duration-300 w-fit">
             <Link href="/">About</Link>
           </li>
-          <li className="hover:text-primary-cstm duration-300">
+          <li className="hover:text-primary-cstm duration-300 w-fit">
             <Link href="/">Rooms</Link>
           </li>
-          <li className="hover:text-primary-cstm duration-300">
+          <li className="hover:text-primary-cstm duration-300 w-fit">
             <Link href="/">News</Link>
           </li>
         </ul>
       </div>
-      <div className="w-fit flex justify-center flex-col">
+      <div className=" flex justify-center flex-col">
         <p className="text-2xl font-semibold">Contact Us</p>
-        <ul className="mt-6 flex flex-col gap-6">
+        <ul className="md:mt-6 mt-3 flex flex-col gap-6">
           <li className="flex gap-4 items-center">
             <MapPin />
             <p>
@@ -53,10 +53,12 @@ const footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-fit flex justify-center flex-col">
+      <div className=" flex justify-center flex-col">
         <p className="text-2xl font-semibold">Follow Us</p>
-        <p className="mt-6">Venenatis urna cursus eget nunc scelerisque</p>
-        <div className="flex gap-4 clear-start mt-8">
+        <p className="md:mt-6 mt-3">
+          Venenatis urna cursus eget nunc scelerisque
+        </p>
+        <div className="flex gap-4 clear-start md:mt-8 mt-4">
           <Facebook className="fill-white" strokeWidth={1} />
           <Instagram className="" strokeWidth={2} />
           <Twitter className="" strokeWidth={2} />
