@@ -13,7 +13,7 @@ const Choose = () => {
         <br />
         Save up to 20% off the nightly rate on stays between 7-14 nights
       </p>
-      <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold">
+      <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold hover:border border-primary-cstm">
         Choose room
       </Button>
     </div>

@@ -27,25 +27,6 @@ const footer = () => {
             placer orci nulla pellentesque
           </p>
         </div>
-        {/* <div className="  ">
-          <div className="lg:w-40 m-auto">
-            <p className="text-2xl font-semibold">Quick links</p>
-            <ul className="flex flex-col gap-3 md:mt-6 mt-3">
-              <li className="hover:text-primary-cstm duration-300 w-fit">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="hover:text-primary-cstm duration-300 w-fit">
-                <Link href="/">About</Link>
-              </li>
-              <li className="hover:text-primary-cstm duration-300 w-fit">
-                <Link href="/">Rooms</Link>
-              </li>
-              <li className="hover:text-primary-cstm duration-300 w-fit">
-                <Link href="/">News</Link>
-              </li>
-            </ul>
-          </div>
-        </div> */}
         <div className="grid md:grid-cols-2 gap-6">
           <div className=" ">
             <p className="text-2xl font-semibold">Contact Us</p>

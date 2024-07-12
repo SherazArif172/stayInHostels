@@ -100,7 +100,7 @@ const Booking = () => {
         </div>
       </div>
       <div className="w-[798px] pl-10 rounded-r-md">
-        <Button className="w-full py-4 h-full rounded-l-none text-base font-semibold  rounded-r-md hover:text-primary hover:bg-white">
+        <Button className="w-full py-4 h-full rounded-l-none text-base font-semibold  rounded-r-md bg-primary text-white hover:bg-white  hover:text-primary">
           Search
         </Button>
       </div>
