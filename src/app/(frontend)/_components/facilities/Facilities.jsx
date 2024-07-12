@@ -20,7 +20,7 @@ const Facilities = () => {
           phasellus vestibulum lorem sed risus ultricies tristique
         </p>
         <div className="grid md:grid-cols-1">
-          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center">
+          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4">
             <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Wifi strokeWidth={1} className="w-16 h-16 text-primary" />
               Free available high speed WiFi
@@ -30,7 +30,7 @@ const Facilities = () => {
               Сonvenient location in the center
             </p>
           </div>
-          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center">
+          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4">
             <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Luggage strokeWidth={1} className="w-14 h-14 text-primary" />
               Free storage of luggage of any size

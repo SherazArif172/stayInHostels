@@ -95,9 +95,9 @@ const Contacts = () => {
         <iframe
           className="absolute inset-0 w-full h-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27010.6093473729!2d73.0263226!3d32.1954407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921947a5fb8d879%3A0xddcf7cf655df0169!2sTHQ%20Hospital%20Kot%20Momin!5e0!3m2!1sen!2s!4v1720701466414!5m2!1sen!2s"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          // allowfullscreen=""
+          // loading="lazy"
+          // referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
