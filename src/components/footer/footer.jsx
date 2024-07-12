@@ -46,7 +46,7 @@ const footer = () => {
             </ul>
           </div>
         </div> */}
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-6">
           <div className=" ">
             <p className="text-2xl font-semibold">Contact Us</p>
             <ul className="md:mt-6 mt-3 flex flex-col gap-6">
@@ -71,10 +71,30 @@ const footer = () => {
               Venenatis urna cursus eget nunc scelerisque
             </p>
             <div className="flex gap-4 clear-start md:mt-8 mt-4">
-              <Facebook className="fill-white" strokeWidth={1} />
-              <Instagram className="" strokeWidth={2} />
-              <Twitter className="" strokeWidth={2} />
-              <Linkedin className="" strokeWidth={2} />
+              <Link href="#">
+                <Facebook
+                  className="fill-white hover:scale-110 duration-300"
+                  strokeWidth={1}
+                />
+              </Link>
+              <Link href="#">
+                <Instagram
+                  className="hover:scale-110 duration-300"
+                  strokeWidth={2}
+                />
+              </Link>
+              <Link href="#">
+                <Twitter
+                  className="hover:scale-110 duration-300"
+                  strokeWidth={2}
+                />
+              </Link>
+              <Link href="#">
+                <Linkedin
+                  className="hover:scale-110 duration-300"
+                  strokeWidth={2}
+                />
+              </Link>
             </div>
           </div>
         </div>
