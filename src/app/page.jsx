@@ -8,6 +8,7 @@ import Facilities from "./(frontend)/_components/facilities/Facilities";
 import Booking from "./(frontend)/_components/booking/Booking";
 import Blogs from "./(frontend)/_components/blogs/blogs";
 import Contacts from "./(frontend)/_components/contacts/Contacts";
+import Gallery from "./(frontend)/_components/gallery/Gallery";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Facilities />
       {/* <Reviews /> */}
       <Booking />
+      <Gallery />
       <Blogs />
       <Contacts />
     </main>
