@@ -35,12 +35,12 @@ const Benifits = () => {
           </p>
         </div>
       </div>
-      <div className="aspect-[14/6] relative overflow-hidden">
+      <div className="md:aspect-[14/6] aspect-square relative overflow-hidden">
         <Image
           src={Video}
           fill
           alt="image"
-          className="object-cover w-full h-full hover:scale-110 duration-500"
+          className="object-cover w-full h-full hover:scale-110 duration-500 rounded-lg"
         />
       </div>{" "}
     </div>
