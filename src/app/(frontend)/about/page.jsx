@@ -1,14 +1,22 @@
 import Link from "next/link";
 import React from "react";
+import Benifits from "./_components/Benifits/Benifits";
+import Rooms from "../_components/rooms/Rooms";
 
 const page = () => {
   return (
-    <div className="bg-primary-bgg h-44 p-14">
-      <Link href="/" className="hover:text-primary">
-        Home
-      </Link>{" "}
-      / about
-      <p className="text-5xl font-semibold">About</p>
+    <div>
+      <div className="bg-primary-bgg h-44 p-14">
+        <div className="text-lg">
+          <Link href="/" className="text-primary font-semibold">
+            Home
+          </Link>{" "}
+          / About
+        </div>
+        <p className="text-5xl font-semibold mt-2">About</p>
+      </div>
+      <Benifits />
+      <Rooms />
     </div>
   );
 };

@@ -30,7 +30,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-16 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
             {navData.map((nav, index) => (
               <li
-                className="relative w-fit group  text-foreground/70 hover:text-primary transition-all duration-300 "
+                className="relative w-fit group  text-foreground/70 hover-transition"
                 key={index}
               >
                 <Link href={nav.path}>
