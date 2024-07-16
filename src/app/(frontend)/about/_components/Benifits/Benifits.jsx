@@ -1,8 +1,10 @@
 import React from "react";
+import Video from "../../../../../../public/benifits/video.webp";
+import Image from "next/image";
 
 const Benifits = () => {
   return (
-    <div className="lg:pt-16 pt-8 pb-16 lg:px-16 px-4">
+    <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4">
       <div className="flex md:flex-row flex-col justify-between lg:gap-28 gap-5">
         <p className="md:text-4xl text-4xl md:max-w-96 font-semibold">
           The main benefits to choose Hosteller
@@ -33,6 +35,14 @@ const Benifits = () => {
           </p>
         </div>
       </div>
+      <div className="aspect-[14/6] relative overflow-hidden">
+        <Image
+          src={Video}
+          fill
+          alt="image"
+          className="object-cover w-full h-full hover:scale-110 duration-500"
+        />
+      </div>{" "}
     </div>
   );
 };
