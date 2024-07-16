@@ -6,7 +6,7 @@ import Rooms from "../_components/rooms/Rooms";
 const page = () => {
   return (
     <div>
-      <div className="bg-primary-bgg h-44 p-14">
+      <div className="bg-primary-cstm h-44 p-14">
         <div className="text-lg">
           <Link href="/" className="text-primary font-semibold">
             Home
