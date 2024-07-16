@@ -9,7 +9,7 @@ import { Scan } from "lucide-react";
 
 const Gallery = () => {
   return (
-    <div className="py-16 px-14">
+    <div className="py-16 px-14 m-auto max-w-7xl">
       <div className="flex justify-between items-center">
         <p className="md:text-4xl text-2xl font-semibold ">
           {" "}

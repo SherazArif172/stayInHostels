@@ -4,19 +4,19 @@
     "path": "/"
   },
   {
-    "title": "About Us",
+    "title": "About",
     "path": "/about"
   },
   {
-    "title": "Services",
-    "path": "/services"
+    "title": "Rooms",
+    "path": "/rooms"
   },
   {
-    "title": "Contact",
-    "path": "/contact"
+    "title": "News",
+    "path": "/news"
   },
   {
-    "title": "Blog",
-    "path": "/blog"
+    "title": "FAQs",
+    "path": "/faq"
   }
 ]

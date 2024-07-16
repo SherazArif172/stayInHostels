@@ -14,7 +14,7 @@ const blogs = () => {
           View all news
         </Button>
       </div>
-      <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
         {Blogss.map((blogs, index) => (
           <div className="shadow-custom" key={index}>
             <div className="relative aspect-[12/8] w-full">

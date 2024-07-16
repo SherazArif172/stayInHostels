@@ -4,8 +4,8 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <div className="flex lg:flex-row flex-col max-w-7xl m-auto pt-16 lg:gap-0 gap-8 lg:px-0 px-4">
-      <div className="lg:px-16 self-center w-full">
+    <div className="flex lg:flex-row flex-col max-w-7xl m-auto pt-16 lg:gap-0 gap-8">
+      <div className="lg:px-16 self-center w-full px-4">
         <p className="text-4xl font-semibold md:text-left text-center">
           Contacts
         </p>
