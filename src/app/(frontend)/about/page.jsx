@@ -3,6 +3,7 @@ import React from "react";
 import Benifits from "./_components/Benifits/Benifits";
 import Rooms from "../_components/rooms/Rooms";
 import Stages from "./_components/Stages/Stages";
+import Question from "./_components/Question/Question";
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <Benifits />
       <Rooms />
       <Stages />
+      <Question />
     </div>
   );
 };
