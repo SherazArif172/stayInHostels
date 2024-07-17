@@ -1,11 +1,13 @@
 import { Check, MailOpen, User } from "lucide-react";
 import React from "react";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 const Question = () => {
   return (
     <div className="px-16 py-16 flex gap-8">
-      <div className="w-full">
+      <div className="w-full lg:self-center">
         <p className="md:text-4xl text-3xl font-bold">
           Rule settlement, eviction and stay
         </p>
@@ -48,7 +50,11 @@ const Question = () => {
               <MailOpen strokeWidth={1} />
             </div>
           </div>
+          <div className="mt-10">
+            <Textarea placeholder="Message" />
+          </div>
         </div>
+        <Button className="mt-10">Send message</Button>
       </div>
     </div>
   );
