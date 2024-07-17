@@ -65,7 +65,7 @@ const Stages = () => {
         </div>
         <Button className="mt-9 sm:w-auto w-full">Choose room</Button>
       </div>
-      <div className="relative aspect-[12/8] lg:w-1/2 w-full overflow-hidden shadow-custom rounded-lg">
+      <div className="relative aspect-[12/8]  w-full overflow-hidden shadow-custom rounded-lg">
         <Image
           src={Bookingimg}
           fill
