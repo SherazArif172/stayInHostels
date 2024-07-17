@@ -1,5 +1,6 @@
-import { Check } from "lucide-react";
+import { Check, MailOpen, User } from "lucide-react";
 import React from "react";
+import { Input } from "@/components/ui/input";
 
 const Question = () => {
   return (
@@ -32,7 +33,23 @@ const Question = () => {
           </p>
         </div>
       </div>
-      <div className="w-full">ksjd</div>
+      <div className="w-full bg-white shadow-custom p-16">
+        <p className="md:text-4xl text-3xl font-bold">
+          We are ready answer your question{" "}
+        </p>
+        <div className="mt-10">
+          <div className="flex gap-6">
+            <div className="border px-5 border-black rounded-lg flex justify-between items-center">
+              <Input type="email" placeholder="Email" />{" "}
+              <User strokeWidth={1} />
+            </div>
+            <div className="border px-5 border-black rounded-lg flex justify-between items-center">
+              <Input type="email" placeholder="Email" />{" "}
+              <MailOpen strokeWidth={1} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
