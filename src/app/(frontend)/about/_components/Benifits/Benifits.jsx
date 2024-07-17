@@ -35,7 +35,7 @@ const Benifits = () => {
           </p>
         </div>
       </div>
-      <div className="md:aspect-[14/6] aspect-square relative overflow-hidden">
+      <div className="md:aspect-[14/6] aspect-square relative overflow-hidden rounded-lg">
         <Image
           src={Video}
           fill

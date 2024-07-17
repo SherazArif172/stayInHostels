@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Benifits from "./_components/Benifits/Benifits";
 import Rooms from "../_components/rooms/Rooms";
+import Stages from "./_components/Stages/Stages";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       </div>
       <Benifits />
       <Rooms />
+      <Stages />
     </div>
   );
 };
