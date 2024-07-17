@@ -4,6 +4,7 @@ import Benifits from "./_components/Benifits/Benifits";
 import Rooms from "../_components/rooms/Rooms";
 import Stages from "./_components/Stages/Stages";
 import Question from "./_components/Question/Question";
+import Faqs from "./_components/Faq/Faqs";
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <Rooms />
       <Stages />
       <Question />
+      <Faqs />
     </div>
   );
 };

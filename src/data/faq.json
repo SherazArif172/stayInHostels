@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is HTML5?",
+    "answer": "HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages. It is used to structure and present content on the web."
+  },
+  {
+    "question": "What is CSS?",
+    "answer": "CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on screen, paper, or in other media."
+  },
+  {
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a programming language that is commonly used to create interactive effects within web browsers."
+  },
+  {
+    "question": "What is React?",
+    "answer": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies."
+  },
+  {
+    "question": "What is Git?",
+    "answer": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed to handle everything from small to very large projects with speed and efficiency."
+  },
+  {
+    "question": "What is API?",
+    "answer": "API stands for Application Programming Interface. It is a set of rules that allows different software entities to communicate with each other."
+  }
+]
