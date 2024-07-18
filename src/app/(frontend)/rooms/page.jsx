@@ -12,7 +12,7 @@ const page = () => {
           </Link>{" "}
           / Rooms
         </div>
-        <p className="text-5xl font-semibold mt-2">About</p>
+        <p className="text-5xl font-semibold mt-2">Rooms</p>
       </div>
       <RoomCards />
     </div>
