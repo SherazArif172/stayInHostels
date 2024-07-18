@@ -11,7 +11,7 @@ const Card = () => {
     <div className="grid md:grid-cols-3 grid-cols-1  gap-6 justify-center lg:mx-0 mx-5 ">
       {Cards.map((index, data) => (
         <div
-          className=" lg:max-w-[360px]  mt-9 shadow-custom  rounded-md"
+          className=" lg:max-w-[360px]  mt-9 shadow-custom  rounded-md "
           key={index}
         >
           <div className="relative">

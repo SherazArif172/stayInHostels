@@ -14,16 +14,19 @@ const RoomCards = () => {
       {/* Main div */}
 
       {roomsData.map((room, index) => (
-        <div className="flex items-center shadow-custom rounded-lg" key={index}>
-          <div className="relative aspect-[15/10] w-96 rounded-l-lg overflow-hidden">
+        <div
+          className="flex lg:flex-row flex-col lg:items-center shadow-custom rounded-lg mt-6"
+          key={index}
+        >
+          <div className="relative lg:aspect-[15/10] aspect-video lg:max-w-96 w-full lg:rounded-l-lg rounded-t-lg overflow-hidden">
             <Image
               src={room.image}
               fill
-              className="object-cover rounded-l-lg hover:scale-110 duration-500"
+              className="object-cover lg:rounded-l-lg rounded-t-lg w-full hover:scale-110 duration-500"
               alt="image"
             />
           </div>
-          <div className="px-8 flex justify-between">
+          <div className="md:px-8 px-5 flex md:flex-row flex-col md:justify-between md:items-center lg:py-0 py-5">
             <div className="w-full">
               <div className="mt-6">
                 {" "}
@@ -46,8 +49,8 @@ const RoomCards = () => {
                 </div>
               </div>
             </div>
-            <div className="w-8/12 text-end">
-              <p className="text-5xl font-semibold mt-6">
+            <div className="md:w-8/12 md:text-end">
+              <p className="md:text-5xl text-3xl font-semibold mt-6">
                 ${room.offer1}{" "}
                 <span className="text-base font-normal"> / 1 night</span>
               </p>
@@ -55,7 +58,7 @@ const RoomCards = () => {
                 ${room.offer2}{" "}
                 <span className="text-base font-normal">/ 7 nights</span>
               </p>
-              <Button className="text-white bg-primary  hover:scale-110 duration-500 transition-all mt-8">
+              <Button className="text-white bg-primary  hover:scale-110 duration-500 transition-all mt-8 sm:w-auto w-full">
                 Book now
               </Button>
             </div>
