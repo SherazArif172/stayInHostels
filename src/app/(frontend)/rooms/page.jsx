@@ -1,0 +1,22 @@
+import Link from "next/link";
+import React from "react";
+import RoomCards from "./RoomCards/RoomCards";
+
+const page = () => {
+  return (
+    <div>
+      <div className="bg-primary-cstm h-44 p-14 max-w-7xl m-auto">
+        <div className="text-lg">
+          <Link href="/" className="text-primary font-semibold">
+            Home
+          </Link>{" "}
+          / Rooms
+        </div>
+        <p className="text-5xl font-semibold mt-2">About</p>
+      </div>
+      <RoomCards />
+    </div>
+  );
+};
+
+export default page;
