@@ -10,7 +10,12 @@ const Owner = () => {
     <div className="lg:py-16 py-8 lg:px-16 px-4 max-w-7xl m-auto">
       <div className="flex md:flex-row flex-col md:items-center gap-10">
         <div className="relative md:w-44 w-40 aspect-square rounded-full">
-          <Image src={Ownerimg} fill className="object-cover rounded-full" />
+          <Image
+            src={Ownerimg}
+            fill
+            className="object-cover rounded-full"
+            alt="image"
+          />
         </div>
         <div className="md:w-4/6">
           <p className="font-semibold text-xl">
