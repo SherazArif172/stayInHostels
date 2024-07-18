@@ -41,7 +41,7 @@ const Navbar = () => {
             ))}
 
             <Button className="  font-semibold">
-              <Link href="/">Contact Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </ul>
         </div>
