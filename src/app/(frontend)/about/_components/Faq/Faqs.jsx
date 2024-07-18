@@ -11,7 +11,7 @@ import Faq from "../../../../../data/faq.json";
 
 const Faqs = () => {
   return (
-    <div className="md:px-16 px-4 lg:py-16 py-8">
+    <div className="md:px-16 px-4 lg:py-16 py-8 m-auto max-w-7xl">
       <div className="flex lg:flex-row flex-col justify-between lg:gap-40">
         <p className="md:text-4xl text-3xl font-bold">
           Frequently asked questions about hostel

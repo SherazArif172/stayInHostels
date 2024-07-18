@@ -7,7 +7,7 @@ import Bookingimg from "../../../../../../public/about_booking/booking.webp";
 
 const Stages = () => {
   return (
-    <div className="flex lg:flex-row flex-col md:gap-16 gap-9 lg:px-16 px-4 py-16">
+    <div className="flex lg:flex-row flex-col md:gap-16 gap-9 lg:px-16 px-4 py-16 m-auto max-w-7xl">
       <div className="w-full ">
         <p className="md:text-4xl text-3xl font-bold">
           Stages of booking a room

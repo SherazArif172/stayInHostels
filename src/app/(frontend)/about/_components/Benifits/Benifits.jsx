@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Benifits = () => {
   return (
-    <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4">
+    <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4 max-w-7xl m-auto">
       <div className="flex md:flex-row flex-col justify-between lg:gap-28 gap-5">
         <p className="md:text-4xl text-4xl md:max-w-96 font-semibold">
           The main benefits to choose Hosteller
