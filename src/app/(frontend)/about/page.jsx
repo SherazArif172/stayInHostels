@@ -5,6 +5,7 @@ import Rooms from "../_components/rooms/Rooms";
 import Stages from "./_components/Stages/Stages";
 import Question from "./_components/Question/Question";
 import Faqs from "./_components/Faq/Faqs";
+import Owner from "./_components/Owner/Owner";
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
       <Stages />
       <Question />
       <Faqs />
+      <Owner />
     </div>
   );
 };
