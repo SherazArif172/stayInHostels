@@ -21,14 +21,14 @@ const Faqs = () => {
         </p>
       </div>
       <div className="mt-8">
-        {Faq.map((faq, index) => (
-          <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full">
+          {Faq.map((faq, index) => (
             <AccordionItem value="item-1" key={index}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent>{faq.answer}</AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
+          ))}
+        </Accordion>
       </div>
     </div>
   );
