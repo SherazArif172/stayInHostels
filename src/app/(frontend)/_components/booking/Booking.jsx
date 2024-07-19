@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Booking = () => {
   return (
-    <div className="flex lg:flex-row flex-col my-28  relative w-full max-w-7xl m-auto bg-primary-bg">
+    <div className="flex lg:flex-row flex-col lg:my-28 lg:py-0 py-4  relative w-full max-w-7xl m-auto bg-primary-bg">
       <div className="lg:px-16 px-6 py-16 lg:w-1/2 w-full lg:m-0 m-auto">
         <p className="md:text-4xl text-2xl font-semibold lg:w-auto md:w-[480px] ">
           Find suitable budget accommodation

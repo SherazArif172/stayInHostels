@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const blogs = () => {
   return (
-    <div className="lg:px-16 px-4 py-16 max-w-7xl m-auto">
+    <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
       <div className="flex justify-between">
         <p className="text-4xl font-semibold ">Hosteller news</p>
         <Button className="bg-primary-cstm text-primary font-bold">

@@ -11,7 +11,7 @@ import Link from "next/link";
 const Facilities = () => {
   return (
     <div className="flex lg:flex-row flex-col max-w-7xl m-auto">
-      <div className="lg:w-1/2 md:p-16 px-3 py-16 ">
+      <div className="lg:w-1/2 md:p-16 px-3 lg:py-16 py-8 ">
         <p className="md:text-4xl text-2xl font-semibold ">
           We have everything you need
         </p>
