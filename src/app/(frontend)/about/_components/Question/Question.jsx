@@ -3,6 +3,7 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import Questionss from "./_components/Questionss";
 
 const Question = () => {
   return (
@@ -35,27 +36,7 @@ const Question = () => {
           </p>
         </div>
       </div>
-      <div className="w-full bg-white shadow-custom md:px-16 px-4 md:py-16 py-8 rounded-lg max-w-full">
-        <p className="md:text-4xl text-3xl font-bold">
-          We are ready answer your question{" "}
-        </p>
-        <div className="mt-10">
-          <div className="flex sm:flex-row flex-col gap-6">
-            <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
-              <Input type="email" placeholder="Email" />{" "}
-              <User strokeWidth={1} />
-            </div>
-            <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
-              <Input type="email" placeholder="Email" />{" "}
-              <MailOpen strokeWidth={1} />
-            </div>
-          </div>
-          <div className="mt-10">
-            <Textarea placeholder="Message" />
-          </div>
-        </div>
-        <Button className="mt-10 sm:w-auto w-full">Send message</Button>
-      </div>
+      <Questionss />
     </div>
   );
 };
