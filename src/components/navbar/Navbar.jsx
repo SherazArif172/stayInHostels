@@ -16,7 +16,7 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="flex justify-between px-10 py-2 ">
+      <nav className="flex justify-between lg:px-10 px-4 py-2 ">
         <Link href="/">
           <div className="flex gap-2">
             <Image src={Navimg} width={60} height={60} alt="image" />
