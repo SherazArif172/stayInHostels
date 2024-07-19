@@ -18,9 +18,11 @@ const footer = () => {
         <div className=" ">
           <div className="flex items-center gap-2">
             <Image src={Imagee} width={50} height={50} alt="image" />
-            <p className="text-3xl self-center font-bold">Hosteller</p>
+            <p className="md:text-3xl text-2xl self-center font-bold">
+              Hosteller
+            </p>
           </div>
-          <p className="text-lg md:mt-5 mt-3">
+          <p className="md:text-lg md:mt-5 mt-3">
             Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
             consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
             placer orci nulla pellentesque.Ultrices gravida dictum fusce ut
@@ -29,17 +31,17 @@ const footer = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           <div className=" ">
-            <p className="text-2xl font-semibold">Contact Us</p>
+            <p className="md:text-2xl text-xl font-semibold">Contact Us</p>
             <ul className="md:mt-6 mt-3 flex flex-col gap-6">
               <li className="flex gap-4 items-center">
                 <MapPin />
-                <p>
+                <p className="lg:text-base text-sm">
                   4826 Fadel Circles <br /> Darrylstad, AZ 90995
                 </p>
               </li>
               <li className="flex gap-4 items-center">
                 <Phone />
-                <p>
+                <p className="lg:text-base text-sm">
                   (329) 580-7077 <br />
                   (650) 382-5020
                 </p>
@@ -47,8 +49,8 @@ const footer = () => {
             </ul>
           </div>
           <div className=" ">
-            <p className="text-2xl font-semibold">Follow Us</p>
-            <p className="md:mt-6 mt-3">
+            <p className="lg:text-2xl text-xl font-semibold">Follow Us</p>
+            <p className="md:mt-6 mt-3 md:text-base text-sm">
               Venenatis urna cursus eget nunc scelerisque
             </p>
             <div className="flex gap-4 clear-start md:mt-8 mt-4">
