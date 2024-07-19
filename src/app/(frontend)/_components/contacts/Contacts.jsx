@@ -1,20 +1,41 @@
+"use client";
+
 import { Clock, Mail, MailOpen, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contacts = () => {
   return (
     <div className="flex lg:flex-row flex-col max-w-7xl m-auto lg:pt-16 pt-4 lg:gap-0 gap-8">
       <div className="lg:px-16 self-center w-full px-4">
-        <p className="text-4xl font-semibold md:text-left text-center">
+        <motion.p
+          initial={{ y: -150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-semibold md:text-left text-center"
+        >
           Contacts
-        </p>
-        <p className="mt-5 md:text-left text-center">
+        </motion.p>
+        <motion.p
+          initial={{ y: -150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-5 md:text-left text-center"
+        >
           Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta
           nibh venenatis cras sed
-        </p>
+        </motion.p>
         <div className="mt-7 ">
-          <div className="flex md:flex-row flex-col gap-7">
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex md:flex-row flex-col gap-7"
+          >
             <div className="flex  justify-center items-center gap-5">
               <div className="p-7 bg-primary-cstm rounded-lg">
                 <Phone
@@ -55,8 +76,14 @@ const Contacts = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="flex md:flex-row flex-col gap-7 mt-6">
+          </motion.div>
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex md:flex-row flex-col gap-7 mt-6"
+          >
             <div className="flex justify-center items-center gap-5">
               <div className="p-7 bg-primary-cstm rounded-lg">
                 <Clock
@@ -87,7 +114,7 @@ const Contacts = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

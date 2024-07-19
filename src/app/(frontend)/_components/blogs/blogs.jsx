@@ -12,12 +12,33 @@ const blogs = () => {
   return (
     <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
       <div className="flex justify-between">
-        <p className="text-4xl font-semibold ">Hosteller news</p>
-        <Button className="bg-primary-cstm text-primary font-bold">
-          View all news
-        </Button>
+        <motion.p
+          initial={{ x: -150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-semibold "
+        >
+          Hosteller news
+        </motion.p>
+        <motion.div
+          initial={{ x: 150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Button className="bg-primary-cstm text-primary font-bold">
+            View all news
+          </Button>
+        </motion.div>
       </div>
-      <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
+      <motion.div
+        initial={{ y: 150, opacity: 0.5 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 "
+      >
         {Blogss.map((blogs, index) => (
           <div className="shadow-custom" key={index}>
             <div className="relative aspect-[12/8] w-full">
@@ -56,7 +77,7 @@ const blogs = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
