@@ -18,6 +18,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import FaqQuestions from "./_components/FaqQuestions/FaqQuestions";
+FaqQuestions;
 
 const page = () => {
   return (
@@ -33,7 +35,7 @@ const page = () => {
       </div>
 
       <div className="lg:py-16 py-8 lg:px-16 px-4 flex lg:flex-row flex-col lg:justify-between justify-center items-center m-auto max-w-7xl">
-        <div>
+        {/* <div>
           <Select>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select a fruit" />
@@ -49,8 +51,8 @@ const page = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
-        </div>
-        <div className="lg:w-3/4 w-full">
+        </div> */}
+        <div className="w-full">
           <Accordion type="single" collapsible className="w-full h-full">
             {Faq.map((faq, index) => (
               <AccordionItem value="item-1" key={index}>
@@ -61,6 +63,7 @@ const page = () => {
           </Accordion>
         </div>
       </div>
+      <FaqQuestions />
     </div>
   );
 };
