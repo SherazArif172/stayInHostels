@@ -1,23 +1,23 @@
 [
   {
     "title": "Home",
-    "path": "/home"
+    "path": "/"
   },
   {
-    "title": "About Us",
+    "title": "About",
     "path": "/about"
   },
   {
-    "title": "Services",
-    "path": "/services"
+    "title": "Rooms",
+    "path": "/rooms"
   },
   {
-    "title": "Contact",
-    "path": "/contact"
+    "title": "FAQs",
+    "path": "/faqs"
   },
   {
-    "title": "Blog",
-    "path": "/blog"
+    "title": "News",
+    "path": "/news"
   },
   {
     "title": "Contact Us",

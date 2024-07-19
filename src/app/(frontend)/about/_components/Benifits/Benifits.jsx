@@ -6,10 +6,10 @@ const Benifits = () => {
   return (
     <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4 max-w-7xl m-auto">
       <div className="flex md:flex-row flex-col justify-between lg:gap-28 gap-5">
-        <p className="md:text-4xl text-4xl md:max-w-96 font-semibold">
+        <p className="md:text-4xl text-3xl md:max-w-96 font-semibold">
           The main benefits to choose Hosteller
         </p>
-        <p className="md:text-right text-lg md:w-5/12">
+        <p className="md:text-right md:text-lg  md:w-5/12 px-2">
           Aliquam eleifend mi in nulla. Viverra nibh cras pulvinar mattis nunc
         </p>
       </div>

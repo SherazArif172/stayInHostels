@@ -8,12 +8,12 @@ import { ArrowRight } from "lucide-react";
 const Owner = () => {
   return (
     <div className="lg:py-16 py-8 lg:px-16 px-4 max-w-7xl m-auto">
-      <div className="flex md:flex-row flex-col md:items-center gap-10">
-        <div className="relative md:w-44 w-40 aspect-square rounded-full">
+      <div className="flex md:flex-row flex-col md:items-center  gap-10">
+        <div className="relative md:w-44 w-40 aspect-square rounded-full ">
           <Image
             src={Ownerimg}
             fill
-            className="object-cover rounded-full"
+            className="object-cover rounded-full "
             alt="image"
           />
         </div>

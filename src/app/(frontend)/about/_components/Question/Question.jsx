@@ -7,7 +7,7 @@ import Questionss from "./_components/Questionss";
 
 const Question = () => {
   return (
-    <div className="lg:px-16 px-4 lg:py-16 py-8 flex lg:flex-row flex-col lg:gap-8 gap-6 max-w-7xl m-auto">
+    <div className="lg:px-16 px-4 lg:py-16 py-4 flex lg:flex-row flex-col lg:gap-8 gap-6 max-w-7xl m-auto">
       <div className="w-full lg:self-center">
         <p className="md:text-4xl text-3xl font-bold">
           Rule settlement, eviction and stay
