@@ -24,7 +24,8 @@ const Hero = () => {
           <motion.p
             className="max-w-lg my-8 pl-4 border-l-[3px] border-primary text-lg"
             initial={{ y: 150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             Egestas pretium aenean pharetra magna ac. Et tortor consequat id
@@ -60,8 +61,9 @@ const Booking = () => {
     <motion.div
       className="lg:flex hidden rounded-md  shadow-custom w-[829px]  pl-14 absolute bottom-44 left-16 z-10 bg-background "
       initial={{ y: 150, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
     >
       <div
         className="w-full py-4 "

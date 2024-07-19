@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Facilitiec from "../../../../../public/facilities/facilities.webp";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import { Luggage } from "lucide-react";
 import { CircleParking } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Facilities = () => {
   return (
@@ -52,7 +55,13 @@ const Facilities = () => {
           </Link>
         </div>
       </div>
-      <div className="lg:w-1/2 relative lg:aspect-[11/10] overflow-hidden lg:mx-0 mx-3">
+      <motion.div
+        initial={{ scale: 0.5, opacity: 0 }}
+        transition={{ duration: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="lg:w-1/2 relative lg:aspect-[11/10] overflow-hidden lg:mx-0 mx-3"
+      >
         <Image
           src={Facilitiec}
           width={800}
@@ -60,7 +69,7 @@ const Facilities = () => {
           className="object-cover w-full h-full hover:scale-110 duration-1000"
           alt="image"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

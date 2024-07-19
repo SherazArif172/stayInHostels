@@ -1,15 +1,17 @@
+"use client ";
+
 import React from "react";
 import Image from "next/image";
-import image1 from "../../../../../../public/rooms/room1.webp";
 import { User, BedSingle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Cards from "../../../../../data/cards.json";
 import Choose from "./Choose";
+import { motion } from "framer-motion";
 
 const Card = () => {
   return (
     <div className="grid md:grid-cols-3 grid-cols-1  md:gap-6 gap-0 justify-center lg:mx-0 mx-5 ">
-      {Cards.map((index, data) => (
+      {Cards.map((data, index) => (
         <div
           className=" lg:max-w-[360px]  mt-9 shadow-custom  rounded-md "
           key={index}

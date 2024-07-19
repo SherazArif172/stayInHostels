@@ -1,9 +1,19 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { motion } from "framer-motion";
+// import { tree } from "next/dist/build/templates/app-page";
 
 const Choose = () => {
   return (
-    <div className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11 bg-primary text-white rounded-md">
+    <motion.div
+      initial={{ x: 150, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      whileInView={{ x: 0, opacity: 1 }}
+      className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11 bg-primary text-white rounded-md"
+    >
       <p className="text-4xl font-bold ">Stay Longer, Save More</p>
       <p className="text-lg mt-4">
         It&apos;s simple the longer you stay, the more you save!
@@ -16,7 +26,7 @@ const Choose = () => {
       <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold hover:border border-primary-cstm">
         Choose room
       </Button>
-    </div>
+    </motion.div>
   );
 };
 
