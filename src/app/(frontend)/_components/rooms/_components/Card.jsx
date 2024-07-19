@@ -1,4 +1,4 @@
-"use client ";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -12,7 +12,11 @@ const Card = () => {
   return (
     <div className="grid md:grid-cols-3 grid-cols-1  md:gap-6 gap-0 justify-center lg:mx-0 mx-5 ">
       {Cards.map((data, index) => (
-        <div
+        <motion.div
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
           className=" lg:max-w-[360px]  mt-9 shadow-custom  rounded-md "
           key={index}
         >
@@ -45,7 +49,7 @@ const Card = () => {
               see availablity <ArrowRight className="w-4" />
             </Link>
           </div>
-        </div>
+        </motion.div>
       ))}
       <Choose />
     </div>

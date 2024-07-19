@@ -1,6 +1,6 @@
 [
   {
-    "image": "/public/rooms/rooms.webp",
+    "image": "/rooms/rooms.webp",
     "price": 18,
     "night": 1,
     "title": "Bed in 6-Bed Room with Shared Bathroom",
@@ -8,7 +8,7 @@
     "beds": 2
   },
   {
-    "image": "/public/rooms/roomss.webp",
+    "image": "/rooms/roomss.webp",
     "price": 35,
     "night": 1,
     "title": "Double Room with Private Bathroom",

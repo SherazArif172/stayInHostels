@@ -32,15 +32,16 @@ const blogs = () => {
           </Button>
         </motion.div>
       </div>
-      <motion.div
-        initial={{ y: 150, opacity: 0.5 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 "
-      >
+      <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
         {Blogss.map((blogs, index) => (
-          <div className="shadow-custom" key={index}>
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="shadow-custom"
+            key={index}
+          >
             <div className="relative aspect-[12/8] w-full">
               <Image
                 src={blogs.image}
@@ -75,9 +76,9 @@ const blogs = () => {
                 <div></div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
