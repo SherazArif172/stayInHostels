@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Image1 from "../../../../../public/gallery/full01.webp";
@@ -6,19 +8,39 @@ import Image3 from "../../../../../public/gallery/full12.webp";
 import Image4 from "../../../../../public/gallery/gallery04.webp";
 import { Button } from "@/components/ui/button";
 import { Scan } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
     <div className="lg:py-16 py-8 lg:px-14 px-4 m-auto max-w-7xl">
       <div className="flex justify-between items-center">
-        <p className="md:text-4xl text-2xl font-semibold ">
+        <motion.p
+          initial={{ x: -150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="md:text-4xl text-2xl font-semibold "
+        >
           {" "}
           Photos of our rooms
-        </p>
-        <Button>View all photos</Button>
+        </motion.p>
+        <motion.div
+          initial={{ x: 150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Button>View all photos</Button>
+        </motion.div>
       </div>
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-11 mt-8">
-        <div className="relative aspect-[11/16] overflow-hidden group">
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0.5 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="relative aspect-[11/16] overflow-hidden group"
+        >
           <Image
             src={Image1}
             fill
@@ -32,9 +54,15 @@ const Gallery = () => {
               strokeWidth={1}
             />
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-col gap-11">
-          <div className="relative aspect-[12/8] overflow-hidden group">
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0.5 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative aspect-[12/8] overflow-hidden group"
+          >
             {" "}
             <Image
               src={Image2}
@@ -49,8 +77,14 @@ const Gallery = () => {
                 strokeWidth={1}
               />
             </div>
-          </div>
-          <div className="relative aspect-[12/8] overflow-hidden group">
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0.5 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative aspect-[12/8] overflow-hidden group"
+          >
             <Image
               src={Image3}
               fill
@@ -64,9 +98,15 @@ const Gallery = () => {
                 strokeWidth={1}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="relative aspect-[11/16] overflow-hidden group">
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0.5 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="relative aspect-[11/16] overflow-hidden group"
+        >
           <Image
             src={Image4}
             fill
@@ -80,7 +120,7 @@ const Gallery = () => {
               strokeWidth={1}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

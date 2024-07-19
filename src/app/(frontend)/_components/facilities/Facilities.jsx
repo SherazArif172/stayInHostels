@@ -15,15 +15,33 @@ const Facilities = () => {
   return (
     <div className="flex lg:flex-row flex-col max-w-7xl m-auto">
       <div className="lg:w-1/2 md:p-16 px-3 lg:py-16 py-8 ">
-        <p className="md:text-4xl text-2xl font-semibold ">
+        <motion.p
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="md:text-4xl text-2xl font-semibold "
+        >
           We have everything you need
-        </p>
-        <p className="mt-6 text-lg">
+        </motion.p>
+        <motion.p
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 text-lg"
+        >
           Posuere morbi leo urna molestie at elementum eu facilisis sed. Diam
           phasellus vestibulum lorem sed risus ultricies tristique
-        </p>
+        </motion.p>
         <div className="grid md:grid-cols-1">
-          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4">
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4"
+          >
             <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Wifi strokeWidth={1} className="w-16 h-16 text-primary" />
               Free available high speed WiFi
@@ -32,8 +50,14 @@ const Facilities = () => {
               <MapPin strokeWidth={1} className="w-16 h-16 text-primary" />
               Сonvenient location in the center
             </p>
-          </div>
-          <div className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4">
+          </motion.div>
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4"
+          >
             <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Luggage strokeWidth={1} className="w-14 h-14 text-primary" />
               Free storage of luggage of any size
@@ -45,15 +69,21 @@ const Facilities = () => {
               />
               Parking place allocated to you
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="mt-10 flex md:flex-row flex-col-reverse items-center gap-4">
+        <motion.div
+          initial={{ x: 150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-10 flex md:flex-row flex-col-reverse items-center gap-4"
+        >
           <Button className="sm:w-auto w-full">Book now</Button>
           <Link href={"#"} className="flex gap-2 text-blue-900 font-semibold">
             More about <ArrowRight className="w-4 self-center" />
           </Link>
-        </div>
+        </motion.div>
       </div>
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}

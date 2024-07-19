@@ -1,9 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Blogss from "../../../../data/blogs.json";
 import Image from "next/image";
 import { CalendarDays, Eye } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const blogs = () => {
   return (
