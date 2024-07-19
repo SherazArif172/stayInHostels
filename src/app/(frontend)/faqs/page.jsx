@@ -33,8 +33,9 @@ const page = () => {
           Frequently asked questions
         </p>
       </div>
+      <FaqQuestions />
 
-      <div className="lg:py-16 py-8 lg:px-16 px-4 flex lg:flex-row flex-col lg:justify-between justify-center items-center m-auto max-w-7xl">
+      <div className="lg:py-16 py-8 lg:px-16 px-4   m-auto max-w-7xl">
         {/* <div>
           <Select>
             <SelectTrigger className="w-[180px]">
@@ -52,7 +53,10 @@ const page = () => {
             </SelectContent>
           </Select>
         </div> */}
-        <div className="w-full">
+        <p className="sm:text-4xl text-2xl font-semibold text-center">
+          Frequently asked questions
+        </p>
+        <div className="w-full mt-12">
           <Accordion type="single" collapsible className="w-full h-full">
             {Faq.map((faq, index) => (
               <AccordionItem value="item-1" key={index}>
@@ -63,7 +67,6 @@ const page = () => {
           </Accordion>
         </div>
       </div>
-      <FaqQuestions />
     </div>
   );
 };
