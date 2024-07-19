@@ -21,18 +21,18 @@ import {
 
 const page = () => {
   return (
-    <div className=" max-w-7xl m-auto">
-      <div className="text-lg h-44 bg-primary-cstm p-14">
+    <div className=" ">
+      <div className="text-lg h-44 bg-primary-cstm md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
         <Link href="/" className="text-primary font-semibold">
           Home
         </Link>{" "}
         / Frequently asked questions
-        <p className="text-5xl font-semibold mt-2">
+        <p className="md:text-5xl text-2xl font-semibold mt-2">
           Frequently asked questions
         </p>
       </div>
 
-      <div className="lg:py-16 py-8 lg:px-16 px-4 flex lg:flex-row flex-col lg:justify-between justify-center items-center">
+      <div className="lg:py-16 py-8 lg:px-16 px-4 flex lg:flex-row flex-col lg:justify-between justify-center items-center m-auto max-w-7xl">
         <div>
           <Select>
             <SelectTrigger className="w-[180px]">
