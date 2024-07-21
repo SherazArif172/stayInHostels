@@ -1,18 +1,33 @@
+"use client";
+
 import { Check, MailOpen, User } from "lucide-react";
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Questionss from "./_components/Questionss";
+import { motion } from "framer-motion";
 
 const Question = () => {
   return (
     <div className="lg:px-16 px-4 lg:py-16 py-4 flex lg:flex-row flex-col lg:gap-8 gap-6 max-w-7xl m-auto">
       <div className="w-full lg:self-center">
-        <p className="md:text-4xl text-3xl font-bold">
+        <motion.p
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="md:text-4xl text-3xl font-bold"
+        >
           Rule settlement, eviction and stay
-        </p>
-        <div className="text-lg mt-7">
+        </motion.p>
+        <motion.div
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-lg mt-7"
+        >
           <p className="flex gap-2">
             <Check /> Time of arrival is after 14-00. Time of departure is to
             12-00
@@ -34,7 +49,7 @@ const Question = () => {
             condimentum. Quam elementum pulvinar etiam non quam lacus
             suspendisse. Eget gravida cum sociis natoque
           </p>
-        </div>
+        </motion.div>
       </div>
       <Questionss />
     </div>
