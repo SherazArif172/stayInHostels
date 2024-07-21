@@ -1,14 +1,22 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import Hero from "./(frontend)/_components/hero/Hero";
-import Rooms from "./(frontend)/_components/rooms/Rooms";
-// import HeroMain from "./(frontend)/_components/hero/HeroMain";
-import Facilities from "./(frontend)/_components/facilities/Facilities";
-// import Reviews from "./(frontend)/_components/reviews/Reviews";
-import Booking from "./(frontend)/_components/booking/Booking";
-import Blogs from "./(frontend)/_components/blogs/blogs";
-import Contacts from "./(frontend)/_components/contacts/Contacts";
-import Gallery from "./(frontend)/_components/gallery/Gallery";
+const Hero = dynamic(() => import("./(frontend)/_components/hero/Hero"));
+const Rooms = dynamic(() => import("./(frontend)/_components/rooms/Rooms"));
+const Facilities = dynamic(() =>
+  import("./(frontend)/_components/facilities/Facilities")
+);
+const Booking = dynamic(() =>
+  import("./(frontend)/_components/booking/Booking")
+);
+const Blogs = dynamic(() => import("./(frontend)/_components/blogs/blogs"));
+const Contacts = dynamic(() =>
+  import("./(frontend)/_components/contacts/Contacts")
+);
+const Gallery = dynamic(() =>
+  import("./(frontend)/_components/gallery/Gallery")
+);
+
+// Now you can use these components in your application
 
 export default function Home() {
   return (
