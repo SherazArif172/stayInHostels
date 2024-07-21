@@ -1,6 +1,4 @@
 import React from "react";
-import Loader from "../../public/loader/animationnn.gif";
-import Image from "next/image";
 import { Ellipsis } from "lucide-react";
 
 const loading = () => {
