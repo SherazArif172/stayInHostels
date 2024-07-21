@@ -19,7 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import FaqQuestions from "./_components/FaqQuestions/FaqQuestions";
-FaqQuestions;
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
@@ -53,10 +53,22 @@ const page = () => {
             </SelectContent>
           </Select>
         </div> */}
-        <p className="sm:text-4xl text-2xl font-semibold text-center">
+        <motion.p
+          initial={{ x: 150, opacity: 0.5 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="sm:text-4xl text-2xl font-semibold text-center"
+        >
           Frequently asked questions
-        </p>
-        <div className="w-full mt-12">
+        </motion.p>
+        <motion.div
+          initial={{ y: 150, opacity: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="w-full mt-12"
+        >
           <Accordion type="single" collapsible className="w-full h-full">
             {Faq.map((faq, index) => (
               <AccordionItem value="item-1" key={index}>
@@ -65,7 +77,7 @@ const page = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
