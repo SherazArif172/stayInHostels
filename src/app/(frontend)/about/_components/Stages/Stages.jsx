@@ -1,9 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Banknote, CalendarCheck, LockKeyholeOpen, Phone } from "lucide-react";
 import Image from "next/image";
 import { fromJSON } from "postcss";
 import React from "react";
 import Bookingimg from "../../../../../../public/about_booking/booking.webp";
+import { motion } from "framer-motion";
 
 const Stages = () => {
   return (
