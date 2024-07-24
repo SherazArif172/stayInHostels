@@ -14,14 +14,13 @@ const RoomCards = () => {
     <div className="lg:py-16 py-8 lg:px-16 px-4 max-w-7xl m-auto">
       {/* Main div */}
 
-      <motion.div
-        initial={{ y: 150, opacity: 0.5 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
+      <div>
         {roomsData.map((room, index) => (
-          <div
+          <motion.div
+            initial={{ y: 150, opacity: 0.5 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
             className="flex lg:flex-row flex-col lg:items-center shadow-custom rounded-lg mt-6"
             key={index}
           >
@@ -70,9 +69,9 @@ const RoomCards = () => {
                 </Button>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
