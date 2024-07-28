@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Blogss from "../../../data/blogs.json";
+import Blogss from "../../../data/news.json";
 import Image from "next/image";
-import { CalendarDays, Eye } from "lucide-react";
+import { CalendarDays, Eye, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ const news = () => {
         <p className="md:text-5xl text-2xl font-semibold mt-2">News</p>
       </div>
       <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
-        <div className="mt-8  flex">
+        <div className="mt-8  flex gap-24">
           <div className="">
             {" "}
             {Blogss.map((blogs, index) => (
@@ -29,7 +29,7 @@ const news = () => {
                 className="shadow-custom flex justify-center items-center mt-7 group"
                 key={index}
               >
-                <div className="relative  aspect-[5/4] w-1/2 overflow-hidden rounded-l-lg">
+                <div className="relative  aspect-[20/20] w-1/2 overflow-hidden rounded-l-lg">
                   <Image
                     src={blogs.image}
                     fill
@@ -60,13 +60,20 @@ const news = () => {
                       <Eye className="text-primary w-6 h-6" strokeWidth={1} />
                       {blogs.views}
                     </p>
+                    <p className="flex gap-1 justify-center items-center">
+                      <MessageCircle
+                        className="text-primary w-6 h-6"
+                        strokeWidth={1}
+                      />
+                      1 comment
+                    </p>
                     <div></div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div>dkj</div>
+          <div className="">dkj</div>
         </div>
       </div>{" "}
     </div>
