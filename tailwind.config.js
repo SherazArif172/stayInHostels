@@ -30,7 +30,7 @@ module.exports = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           cstm: "hsl(208, 58%, 91%)",
-          bgg: "hsl (210, 60%, 98.04%)",
+          bgg: "hsl(210, 60%, 98.04%)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

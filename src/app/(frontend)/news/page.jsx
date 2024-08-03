@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const news = () => {
   return (
     <div className=" ">
-      <div className="text-lg h-44 bg-primary-cstm md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
+      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
         <Link href="/" className="text-primary font-semibold">
           Home
         </Link>{" "}

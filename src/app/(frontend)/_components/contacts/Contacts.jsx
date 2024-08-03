@@ -46,7 +46,8 @@ const Contacts = () => {
               <div className="w-44">
                 <p className="text-2xl font-semibold">Phone</p>
                 <p className="mt-1">
-                  (329) 580-7077 <br /> (650) 382-5020
+                  +923310008196 <br />
+                  +923118100096
                 </p>
               </div>
             </div>
@@ -66,13 +67,6 @@ const Contacts = () => {
                   >
                     stayinnhostels@hotmail.com
                   </Link>{" "}
-                  <br />{" "}
-                  <Link
-                    href="mailto:info@ShopVessels.com"
-                    className="text-primary"
-                  >
-                    info@ShopVessels.com
-                  </Link>
                 </p>
               </div>
             </div>
@@ -119,12 +113,6 @@ const Contacts = () => {
       </div>
 
       <div className="relative w-full h-[500px]  pb-56">
-        {/* <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27010.6093473729!2d73.0263226!3d32.1954407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921947a5fb8d879%3A0xddcf7cf655df0169!2sTHQ%20Hospital%20Kot%20Momin!5e0!3m2!1sen!2s!4v1720701466414!5m2!1sen!2s"
-          // allowfullscreen=""
-          // loading="lazy"
-          // referrerpolicy="no-referrer-when-downgrade"
-        ></iframe> */}
         <iframe
           className="absolute inset-0 w-full h-full"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18089.86623074214!2d74.3804935728941!3d31.4495441742312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907523b5346f5%3A0x3a4d32ac49f25903!2sStay%20Inn%20Hostels!5e0!3m2!1sen!2s!4v1722710560866!5m2!1sen!2s"

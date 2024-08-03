@@ -10,7 +10,7 @@ import Owner from "./_components/Owner/Owner";
 const page = () => {
   return (
     <div>
-      <div className="bg-primary-cstm h-44 p-14 max-w-7xl m-auto">
+      <div className="bg-primary-bgg h-44 p-14 max-w-7xl m-auto">
         <div className="text-lg">
           <Link href="/" className="text-primary font-semibold">
             Home

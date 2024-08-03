@@ -16,13 +16,16 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="flex justify-between items-center lg:px-10 px-4 py-8 max-w-[1170px] m-auto">
+      <nav className="flex justify-between items-center lg:px-10 md:px-7 px-4 py-8 max-w-[1170px] m-auto">
         <Link href="/">
           <div className="flex gap-2">
-            <Image src={Navimg} width={100} height={49} alt="image" />
-            {/* <p className="text-3xl self-center font-bold text-primary">
-              Hosteller
-            </p> */}
+            <Image
+              src={Navimg}
+              width={100}
+              height={49}
+              alt="image"
+              className="max-w-7xl"
+            />
           </div>
         </Link>
 
