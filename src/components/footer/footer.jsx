@@ -10,6 +10,7 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const footer = () => {
   return (
@@ -78,6 +79,12 @@ const footer = () => {
                     className="hover:scale-110 duration-300"
                     strokeWidth={2}
                   />
+                </Link>
+                <Link
+                  href="https://wa.me/03310008190
+"
+                >
+                  <FaWhatsapp className="hover:scale-110 duration-300 w-6 h-6" />
                 </Link>
               </div>
             </div>
