@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Owner = () => {
   return (
-    <div className="lg:py-16 py-8 lg:px-16 px-4 max-w-7xl m-auto">
+    <div className="lg:py-24 py-8 lg:px-16 px-4 max-w-7xl m-auto bg-primary-bgg">
       <div className="flex md:flex-row flex-col md:items-center  gap-10">
         <motion.div
           initial={{ x: -150, opacity: 0.5 }}
