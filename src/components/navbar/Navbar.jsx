@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Navimg from "../../../public/navbar/stay in hostel 1.png";
+import Navimg from "../../../public/navbar/Frame.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import navData from "../../data/navbar.json";
@@ -11,18 +11,18 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <motion.header
-      className="max-w-7xl m-auto  z-20 bg-background"
+      className="max-w-[1920px] min-h-[108px] m-auto   z-20 bg-background"
       initial={{ y: -90, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="flex justify-between lg:px-10 px-4 py-2 ">
+      <nav className="flex justify-between items-center lg:px-10 px-4 py-8 max-w-[1170px] m-auto">
         <Link href="/">
           <div className="flex gap-2">
-            <Image src={Navimg} width={60} height={60} alt="image" />
-            <p className="text-3xl self-center font-bold text-primary">
+            <Image src={Navimg} width={100} height={49} alt="image" />
+            {/* <p className="text-3xl self-center font-bold text-primary">
               Hosteller
-            </p>
+            </p> */}
           </div>
         </Link>
 

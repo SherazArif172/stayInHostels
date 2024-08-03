@@ -2,7 +2,7 @@
 import { Menu, X, Facebook, Instagram, Twitter, Handshake } from "lucide-react";
 import navData from "../../data/mobileNav.json";
 import Link from "next/link";
-import navImg from "../../../public/navbar/stay in hostel 1.png";
+import navImg from "../../../public/navbar/Frame.png";
 import Image from "next/image";
 import { useState } from "react";
 
