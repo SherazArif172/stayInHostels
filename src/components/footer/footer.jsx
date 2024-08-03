@@ -42,8 +42,8 @@ const footer = () => {
               <li className="flex gap-4 items-center">
                 <Phone />
                 <p className="lg:text-base text-sm">
-                  (329) 580-7077 <br />
-                  (650) 382-5020
+                  +923310008196 <br />
+                  +923118100096
                 </p>
               </li>
             </ul>
@@ -54,25 +54,25 @@ const footer = () => {
               Venenatis urna cursus eget nunc scelerisque
             </p>
             <div className="flex gap-4 clear-start md:mt-8 mt-4">
-              <Link href="#">
+              <Link href="https://web.facebook.com/stayinnhostels">
                 <Facebook
                   className="fill-white hover:scale-110 duration-300"
                   strokeWidth={1}
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/stayinnhostels/">
                 <Instagram
                   className="hover:scale-110 duration-300"
                   strokeWidth={2}
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://x.com/stayinnhostels">
                 <Twitter
                   className="hover:scale-110 duration-300"
                   strokeWidth={2}
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/company/stayinnhostels">
                 <Linkedin
                   className="hover:scale-110 duration-300"
                   strokeWidth={2}
