@@ -32,9 +32,9 @@ const MobileNav = () => {
 
       <aside className="">
         <div
-          className={`h-full bg-background w-full  overflow-y-auto  absolute -left-full top-0 px-3 py-4 ${
-            isOpen ? "left-0" : "-left-full"
-          } transition-all duration-300 ease-in-out `}
+          className={`fixed top-0 left-0 h-full bg-background w-full overflow-y-auto transition-transform duration-300 ease-in-out z-30 px-3 py-4 ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           <div>
             <Link href="/">
@@ -51,7 +51,7 @@ const MobileNav = () => {
           <ul className="flex flex-col gap-5  w-full  mt-8 pl-3 overflow-y-auto">
             {navData.map((nav, index) => (
               <li
-                className="relative w-fit group  text-foreground/70 text-lg font-semibold  "
+                className="relative w-fit group  text-foreground/70 text-lg font-extrabold  "
                 key={index}
                 onClick={handleNavbar}
               >
