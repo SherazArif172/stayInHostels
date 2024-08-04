@@ -14,7 +14,7 @@ const Rooms = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="md:text-4xl text-2xl font-bold"
+          className="md:text-4xl text-2xl font-extrabold"
         >
           Hostel rooms
         </motion.p>
@@ -24,7 +24,7 @@ const Rooms = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-primary-cstm text-primary font-semibold">
+          <Button className="bg-primary-cstm text-primary font-bold">
             View all rooms
           </Button>
         </motion.div>

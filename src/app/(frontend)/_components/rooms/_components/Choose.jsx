@@ -14,7 +14,7 @@ const Choose = () => {
       whileInView={{ x: 0, opacity: 1 }}
       className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11 bg-primary text-white rounded-md"
     >
-      <p className="text-4xl font-bold ">Stay Longer, Save More</p>
+      <p className="text-4xl font-extrabold ">Stay Longer, Save More</p>
       <p className="text-lg mt-4">
         It&apos;s simple the longer you stay, the more you save!
       </p>

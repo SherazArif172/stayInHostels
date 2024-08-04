@@ -30,10 +30,10 @@ const Navbar = () => {
         </Link>
 
         <div className="lg:block hidden  bg-white transition-all duration-300  self-center">
-          <ul className="flex items-center gap-16 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
+          <ul className="flex items-center font-bold gap-16 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
             {navData.map((nav, index) => (
               <li
-                className="relative w-fit group  text-foreground/70 hover-transition"
+                className="relative w-fit group  text-primary hover-transition"
                 key={index}
               >
                 <Link href={nav.path}>
@@ -43,7 +43,7 @@ const Navbar = () => {
               </li>
             ))}
 
-            <Button className="  font-semibold">
+            <Button className="  font-bold">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </ul>

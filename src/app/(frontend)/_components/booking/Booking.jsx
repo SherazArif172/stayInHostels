@@ -17,7 +17,7 @@ const Booking = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:text-4xl text-2xl font-semibold lg:w-auto md:w-[480px] "
+            className="md:text-4xl text-2xl font-extrabold lg:w-auto md:w-[480px] "
           >
             Find suitable budget accommodation
           </motion.p>
@@ -43,7 +43,7 @@ const Booking = () => {
                 <Hotel className="text-white w-12 h-12" strokeWidth={1.1} />
               </div>
               <div>
-                <p className="text-xl font-semibold">Hostel territory</p>
+                <p className="text-xl font-extrabold">Hostel territory</p>
                 <p className="w-48">
                   Consequat interdum varius sit amet mattis
                 </p>
@@ -63,7 +63,7 @@ const Booking = () => {
                 />
               </div>
               <div>
-                <p className="text-xl font-semibold">Accommodates guests</p>
+                <p className="text-xl font-extrabold">Accommodates guests</p>
                 <p className="w-48">
                   Consequat interdum varius sit amet mattis
                 </p>
@@ -80,7 +80,7 @@ const Booking = () => {
                 <Bed className="text-white w-12 h-12" strokeWidth={1.1} />
               </div>
               <div>
-                <p className="text-xl font-semibold">Grateful guests</p>
+                <p className="text-xl font-extrabold">Grateful guests</p>
                 <p className="w-48">
                   Consequat interdum varius sit amet mattis
                 </p>
@@ -121,9 +121,11 @@ export default Booking;
 const Family = () => {
   return (
     <div className="border shadow-custom w-80 bg-white p-14 rounded-lg m-auto">
-      <p className="font-bold text-xl">Family Room with Private Bathroom</p>
+      <p className="font-extrabold text-xl">
+        Family Room with Private Bathroom
+      </p>
       <p className="text-lg mt-3">
-        <span className="text-5xl font-semibold">$149</span>/ 1 night
+        <span className="text-5xl font-extrabold">$149</span>/ 1 night
       </p>
       <Button className="bg-primary-cstm text-primary font-bold mt-3">
         see availability

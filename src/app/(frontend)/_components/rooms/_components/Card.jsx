@@ -34,7 +34,7 @@ const Card = () => {
             </p>
           </div>
           <div className="p-6">
-            <p className="text-2xl font-bold">{data.title}</p>
+            <p className="text-2xl font-extrabold">{data.title}</p>
             <div className="flex gap-10">
               <div className="flex gap-2 justify-center items-center h-[50px]">
                 <User />
@@ -45,7 +45,7 @@ const Card = () => {
                 <p className="text-lg ">{data.beds} Bed</p>
               </div>
             </div>
-            <Link href={"#"} className="flex gap-2 text-blue-900">
+            <Link href={"#"} className="flex gap-2 text-blue-900 font-bold">
               see availablity <ArrowRight className="w-4" />
             </Link>
           </div>

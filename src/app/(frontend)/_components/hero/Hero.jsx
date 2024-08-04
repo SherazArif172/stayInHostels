@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex justify-center items-center lg:pl-7 h-[700px]">
         <div className="h-[560px] lg:w-[700px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg">
           <motion.h1
-            className="text-5xl  font-semibold lg:max-w-lg max-w-2xl "
+            className="text-5xl  font-extrabold lg:max-w-lg max-w-2xl "
             initial={{ y: 150, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -22,7 +22,7 @@ const Hero = () => {
             Hosteller — amazing hostel for the free spirited traveler
           </motion.h1>
           <motion.p
-            className="max-w-lg my-8 pl-4 border-l-[3px] border-primary text-lg"
+            className="max-w-lg my-8 pl-4 border-l-[3px] border-primary text-lg "
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -102,7 +102,7 @@ const Booking = () => {
         </div>
       </div>
       <div className="w-[798px] pl-10 rounded-r-md">
-        <Button className="w-full py-4 h-full rounded-l-none text-base font-semibold  rounded-r-md bg-primary text-white hover:bg-white  hover:text-primary">
+        <Button className="w-full py-4 h-full rounded-l-none text-base font-bold  rounded-r-md bg-primary text-white hover:bg-white  hover:text-primary">
           Search
         </Button>
       </div>

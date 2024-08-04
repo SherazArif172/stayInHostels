@@ -20,7 +20,7 @@ const Facilities = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="md:text-4xl text-2xl font-semibold "
+          className="md:text-4xl text-2xl font-extrabold "
         >
           We have everything you need
         </motion.p>
@@ -42,11 +42,11 @@ const Facilities = () => {
             transition={{ duration: 0.5 }}
             className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4"
           >
-            <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
+            <p className="flex md:flex-row font-semibold flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Wifi strokeWidth={1} className="w-16 h-16 text-primary" />
               Free available high speed WiFi
             </p>
-            <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
+            <p className="flex md:flex-row font-semibold flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <MapPin strokeWidth={1} className="w-16 h-16 text-primary" />
               Сonvenient location in the center
             </p>
@@ -58,11 +58,11 @@ const Facilities = () => {
             transition={{ duration: 0.5 }}
             className="flex md:mt-6 md:flex-row flex-col justify-center items-center gap-4"
           >
-            <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
+            <p className="flex md:flex-row font-semibold flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <Luggage strokeWidth={1} className="w-14 h-14 text-primary" />
               Free storage of luggage of any size
             </p>
-            <p className="flex md:flex-row flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
+            <p className="flex md:flex-row font-semibold flex-col items-center gap-3 md:mt-0 mt-4 md:w-1/2 text-base">
               <CircleParking
                 strokeWidth={1}
                 className="w-14 h-14 text-primary"
