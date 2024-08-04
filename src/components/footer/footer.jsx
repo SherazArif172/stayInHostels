@@ -88,7 +88,7 @@ const footer = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-[82px] flex justify-center items-center">
+      <div className="min-h-[82px] flex justify-center items-center md:text-base text-sm text-center">
         merkulov © ClockInn Hostel Template all rights reserved Copyrights 2021
       </div>
     </footer>
