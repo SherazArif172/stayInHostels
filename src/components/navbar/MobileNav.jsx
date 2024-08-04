@@ -1,10 +1,19 @@
 "use client";
-import { Menu, X, Facebook, Instagram, Twitter, Handshake } from "lucide-react";
+import {
+  Menu,
+  X,
+  Facebook,
+  Instagram,
+  Twitter,
+  Handshake,
+  Linkedin,
+} from "lucide-react";
 import navData from "../../data/mobileNav.json";
 import Link from "next/link";
 import navImg from "../../../public/navbar/Frame.png";
 import Image from "next/image";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +39,10 @@ const MobileNav = () => {
           <div>
             <Link href="/">
               <div className="flex gap-2">
-                <Image src={navImg} width={70} height={70} alt="image" />
-                <p className="text-3xl self-center font-bold text-primary">
-                  Hosteller
-                </p>
+                <Image src={navImg} width={100} height={49} alt="image" />
               </div>
               <X
-                className="h-9 w-9 self-center text-primary cursor-pointer absolute top-9 right-5 z-10 "
+                className="h-9 w-9 self-center text-primary cursor-pointer absolute top-6 right-5 z-10 "
                 strokeWidth={4}
                 onClick={handleNavbar}
               />
@@ -53,17 +59,23 @@ const MobileNav = () => {
               </li>
             ))}
             <div className="flex gap-3 mt-8">
-              <Link href={"/"}>
+              <Link href="https://www.instagram.com/stayinnhostels/">
                 {" "}
                 <Instagram className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
-              <Link href={"/"}>
+              <Link href="https://web.facebook.com/stayinnhostels">
                 {" "}
                 <Facebook className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
 
-              <Link href={"/"}>
+              <Link href="https://x.com/stayinnhostels">
                 <Twitter className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
+              </Link>
+              <Link href="https://www.linkedin.com/company/stayinnhostels">
+                <Linkedin className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
+              </Link>
+              <Link href="https://wa.me/03310008190">
+                <FaWhatsapp className="w-9 h-9 hover:scale-110 transition-all duration-300 ease-in-out text-primary" />
               </Link>
             </div>
           </ul>

@@ -19,7 +19,7 @@ const Gallery = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="md:text-4xl text-2xl font-semibold "
+          className="md:text-4xl text-2xl font-extrabold "
         >
           {" "}
           Photos of our rooms

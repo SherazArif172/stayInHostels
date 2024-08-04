@@ -33,7 +33,7 @@ const footer = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className=" ">
-              <p className="md:text-2xl text-xl font-semibold">Contact Us</p>
+              <p className="md:text-2xl text-xl font-extrabold">Contact Us</p>
               <ul className="md:mt-6 mt-3 flex flex-col gap-6">
                 <li className="flex gap-4 items-center">
                   <MapPin />
@@ -51,7 +51,7 @@ const footer = () => {
               </ul>
             </div>
             <div className=" ">
-              <p className="lg:text-2xl text-xl font-semibold">Follow Us</p>
+              <p className="lg:text-2xl text-xl font-extrabold">Follow Us</p>
               <p className="md:mt-6 mt-3 md:text-base text-sm">
                 Venenatis urna cursus eget nunc scelerisque
               </p>
@@ -80,10 +80,7 @@ const footer = () => {
                     strokeWidth={2}
                   />
                 </Link>
-                <Link
-                  href="https://wa.me/03310008190
-"
-                >
+                <Link href="https://wa.me/03310008190">
                   <FaWhatsapp className="hover:scale-110 duration-300 w-6 h-6" />
                 </Link>
               </div>

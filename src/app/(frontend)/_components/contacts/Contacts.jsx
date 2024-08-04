@@ -14,7 +14,7 @@ const Contacts = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-semibold md:text-left text-center"
+          className="text-4xl font-extrabold md:text-left text-center"
         >
           Contacts
         </motion.p>
@@ -23,7 +23,7 @@ const Contacts = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-5 md:text-left text-center"
+          className="mt-5 md:text-left text-center lg:w-96"
         >
           Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta
           nibh venenatis cras sed
@@ -44,7 +44,7 @@ const Contacts = () => {
                 />
               </div>
               <div className="w-44">
-                <p className="text-2xl font-semibold">Phone</p>
+                <p className="text-2xl font-extrabold">Phone</p>
                 <p className="mt-1">
                   +923310008196 <br />
                   +923118100096
@@ -59,7 +59,7 @@ const Contacts = () => {
                 />
               </div>
               <div className="w-44">
-                <p className="text-2xl font-semibold">Email</p>
+                <p className="text-2xl font-extrabold">Email</p>
                 <p className="mt-1">
                   <Link
                     href="stayinnhostels@hotmail.com"
@@ -86,7 +86,7 @@ const Contacts = () => {
                 />
               </div>
               <div className="w-44">
-                <p className="text-2xl font-semibold">Working Time</p>
+                <p className="text-2xl font-extrabold">Working Time</p>
                 <p className="mt-1 ">
                   Everyday <br />
                   9:00 am — 8:00 pm
@@ -101,7 +101,7 @@ const Contacts = () => {
                 />
               </div>
               <div className="w-44">
-                <p className="text-2xl font-semibold">Location</p>
+                <p className="text-2xl font-extrabold">Location</p>
                 <p className="mt-1">
                   behria town ma
                   <br /> (Lahore)

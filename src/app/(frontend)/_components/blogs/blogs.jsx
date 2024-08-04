@@ -17,9 +17,9 @@ const blogs = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-semibold "
+          className="text-4xl font-extrabold "
         >
-          Hosteller news
+          ClockInn news
         </motion.p>
         <motion.div
           initial={{ x: 150, opacity: 0.5 }}
@@ -27,7 +27,7 @@ const blogs = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-primary-cstm text-primary font-bold">
+          <Button className="bg-primary-cstm text-primary font-extrabold">
             View all news
           </Button>
         </motion.div>
@@ -49,14 +49,14 @@ const blogs = () => {
                 className="w-full h-full object-cover"
                 alt="image"
               />
-              <p className="absolute top-7 bg-white p-2 rounded-r-lg text-primary font-semibold">
+              <p className="absolute top-7 bg-white p-2 rounded-r-lg text-primary font-bold">
                 {blogs.topic}
               </p>
             </div>
             <div className="p-8">
               <Link
                 href="#"
-                className="text-xl font-semibold hover:text-primary duration-300"
+                className="text-xl font-extrabold hover:text-primary duration-300"
               >
                 {blogs.title}
               </Link>
