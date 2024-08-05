@@ -72,7 +72,7 @@ const Booking = () => {
           setsetshown(!setshown);
         }}
       >
-        <p className="font-semibold">Check-in</p>
+        <p className="font-bold">Check-in</p>
         <div className="flex gap-4 mt-2 cursor-pointer">
           <CalendarDays className="text-primary" />
           <p>Add date</p>
@@ -87,7 +87,7 @@ const Booking = () => {
         </div>
       </div>
       <div className="w-full my-4 border-l-2  pl-7">
-        <p className="font-semibold">Check-out</p>
+        <p className="font-bold">Check-out</p>
         <div className="flex gap-5 mt-2">
           <CalendarDays className="text-primary" />
           <p>Add date</p>
@@ -96,7 +96,7 @@ const Booking = () => {
       </div>
 
       <div className="w-full my-4 border-l-2 pl-7 ml-4">
-        <p className="font-semibold">Guest</p>
+        <p className="font-bold">Guest</p>
         <div className="flex mt-2 gap-4">
           <User className=" text-primary" />
           <p> 1 adult</p>
@@ -112,10 +112,45 @@ const Booking = () => {
 };
 
 const MobileBook = () => {
+  const [setshown, setsetshown] = useState(false);
+
   return (
-    <div className="">
-      <div className="lg:hidden block lg:mt-0 mt-5 rounded-md  shadow-custom w-full px-5 ">
-        jashdjh
+    <div className="px-5">
+      <div className="lg:hidden block lg:mt-0 mt-5 rounded-md  shadow-custom w-full px-10 py-16 ">
+        <div className="flex gap-10">
+          <div
+            className="w-full py-4 border-b border-primary-cstm"
+            onClick={() => {
+              setsetshown(!setshown);
+            }}
+          >
+            <p className="font-bold">Check-in</p>
+            <div className="flex justify-between gap-4 mt-2 cursor-pointer w-full">
+              <div className="flex justify-center items-center gap-3">
+                <CalendarDays className="text-primary" />
+                <p>Add date</p>
+              </div>
+              <ChevronDown />
+            </div>
+            <div
+              className={`${
+                setshown ? "block" : "hidden"
+              } absolute top-20 bg-background`}
+            >
+              {/* <Calendar /> */}
+            </div>
+          </div>
+          <div className="w-full py-4  pl-7 border-b border-primary-cstm">
+            <p className="font-bold">Check-out</p>
+            <div className="flex justify-between gap-5 mt-2">
+              <div className="flex gap-3 justify-center items-center">
+                <CalendarDays className="text-primary" />
+                <p>Add date</p>
+              </div>
+              <ChevronDown />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
