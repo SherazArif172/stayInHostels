@@ -10,9 +10,9 @@ import { Calendar } from "@/components/ui/calendar";
 
 const Hero = () => {
   return (
-    <div className="flex py-9  relative  max-w-7xl lg:bg-background bg-primary-bgg m-auto">
-      <div className="flex justify-center items-center lg:pl-7 h-[700px]">
-        <div className="h-[560px] lg:w-[700px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg">
+    <div className="flex lg:flex-row flex-col py-9  relative  max-w-7xl lg:bg-background bg-primary-bgg m-auto">
+      <div className="flex justify-center items-center lg:pl-7 lg:h-[700px] lg:pt-0 pt-12">
+        <div className="lg:h-[560px] lg:w-[700px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg">
           <motion.h1
             className="text-5xl  font-extrabold lg:max-w-lg max-w-2xl "
             initial={{ y: 150, opacity: 0 }}
@@ -48,6 +48,7 @@ const Hero = () => {
       </motion.div>
 
       <Booking />
+      <MobileBook />
     </div>
   );
 };
@@ -59,7 +60,7 @@ const Booking = () => {
 
   return (
     <motion.div
-      className="lg:flex hidden rounded-md  shadow-custom w-[829px]  pl-14 absolute bottom-44 left-16 z-10 bg-background "
+      className="lg:flex hidden rounded-md  shadow-custom w-[829px] lg:mt-0 mt-5 pl-14 lg:absolute lg:bottom-44 lg:left-16 z-10 bg-background "
       initial={{ y: 150, opacity: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
@@ -107,5 +108,15 @@ const Booking = () => {
         </Button>
       </div>
     </motion.div>
+  );
+};
+
+const MobileBook = () => {
+  return (
+    <div className="">
+      <div className="lg:hidden block lg:mt-0 mt-5 rounded-md  shadow-custom w-full px-5 ">
+        jashdjh
+      </div>
+    </div>
   );
 };
