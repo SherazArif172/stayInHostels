@@ -16,8 +16,8 @@ const news = () => {
         / News
         <p className="md:text-5xl text-2xl font-semibold mt-2">News</p>
       </div>
-      <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
-        <div className="mt-8  flex gap-24">
+      <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-6xl m-auto">
+        <div className="mt-8  flex lg:flex-row flex-col gap-24 max-w-[800px]">
           <div className="">
             {" "}
             {Blogss.map((blogs, index) => (
