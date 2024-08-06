@@ -29,21 +29,21 @@ const news = () => {
                 className="shadow-custom flex justify-center items-center mt-7 group"
                 key={index}
               >
-                <div className="relative  aspect-[20/20] w-1/2 overflow-hidden rounded-l-lg">
+                <div className="relative  aspect-[13/11] w-full overflow-hidden rounded-l-lg">
                   <Image
                     src={blogs.image}
                     fill
                     className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-l-lg"
                     alt="image"
                   />
-                  <p className="absolute right-0 top-7 bg-white p-2 rounded-l-lg text-primary font-semibold">
+                  <p className="absolute right-0 top-7 bg-white p-2 rounded-l-lg text-primary font-bold">
                     {blogs.topic}
                   </p>
                 </div>
-                <div className="p-8">
+                <div className="px-8">
                   <Link
                     href="#"
-                    className="text-xl font-semibold hover:text-primary duration-300"
+                    className="text-xl font-extrabold hover:text-primary duration-300"
                   >
                     {blogs.title}
                   </Link>
