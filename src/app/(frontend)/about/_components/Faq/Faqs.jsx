@@ -33,22 +33,22 @@ const Faqs = () => {
           Diam phasellus vestibulum lorem sed risus ultricies tristique
         </motion.p>
       </div>
-      <motion.div
-        initial={{ y: 150, opacity: 0.5 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mt-8"
+      <div
+      // initial={{ y: 150, opacity: 0.5 }}
+      // whileInView={{ y: 0, opacity: 1 }}
+      // viewport={{ once: true }}
+      // transition={{ duration: 0.5 }}
+      // className="mt-8"
       >
-        <Accordion type="single" collapsible className="w-full">
-          {Faq.map((faq, index) => (
-            <AccordionItem value="item-1" key={index}>
+        {Faq.map((faq, index) => (
+          <Accordion key={index} type="single" collapsible className="w-full">
+            <AccordionItem value={faq.value}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent>{faq.answer}</AccordionContent>
             </AccordionItem>
-          ))}
-        </Accordion>
-      </motion.div>
+          </Accordion>
+        ))}
+      </div>
     </div>
   );
 };
