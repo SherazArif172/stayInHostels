@@ -2,9 +2,18 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Blogss from "../../../data/news.json";
 import Image from "next/image";
-import { CalendarDays, Eye, MessageCircle } from "lucide-react";
+import {
+  ArrowRight,
+  CalendarDays,
+  Eye,
+  MessageCircle,
+  Search,
+} from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Input } from "@/components/ui/input";
+import Category from "../../../data/categories.json";
+import SideBar from "./_components/SideBar/SideBar";
 
 const news = () => {
   return (
@@ -17,8 +26,9 @@ const news = () => {
         <p className="md:text-5xl text-2xl font-semibold mt-2">News</p>
       </div>
       <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-6xl m-auto">
-        <div className="mt-8  flex lg:flex-row flex-col gap-24 max-w-[800px]">
-          <div className="">
+        <div className="mt-8  flex lg:flex-row flex-col  gap-8 ">
+          {/* news  */}
+          <div className="max-w-[800px]">
             {" "}
             {Blogss.map((blogs, index) => (
               <div
@@ -26,21 +36,21 @@ const news = () => {
                 // whileInView={{ y: 0, opacity: 1 }}
                 // viewport={{ once: true }}
                 // transition={{ duration: 0.5 }}
-                className="shadow-custom flex justify-center items-center mt-7 group"
+                className="shadow-custom flex md:flex-row flex-col justify-center items-center mt-7 group "
                 key={index}
               >
-                <div className="relative  aspect-[13/11] w-full overflow-hidden rounded-l-lg">
+                <div className="relative  aspect-[13/11] w-full h-full overflow-hidden md:rounded-l-lg rounded-t-lg">
                   <Image
                     src={blogs.image}
                     fill
-                    className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-l-lg"
+                    className="w-full h-full object-cover group-hover:scale-110 duration-500 lg:rounded-l-lg rounded-t-lg"
                     alt="image"
                   />
                   <p className="absolute right-0 top-7 bg-white p-2 rounded-l-lg text-primary font-bold">
                     {blogs.topic}
                   </p>
                 </div>
-                <div className="px-8">
+                <div className="sm:px-8 px-4 md:py-0 py-8">
                   <Link
                     href="#"
                     className="text-xl font-extrabold hover:text-primary duration-300"
@@ -48,32 +58,38 @@ const news = () => {
                     {blogs.title}
                   </Link>
                   <p className="mt-3 text-lg">{blogs.description}</p>
-                  <div className="mt-5 flex justify-between">
+                  <div className="mt-5 flex md:justify-between md:gap-0 gap-3">
                     <p className="flex gap-1 justify-center items-center">
                       <CalendarDays
-                        className="text-primary w-6 h-6"
+                        className="text-primary md:w-6 md:h-6 w-4 h-4"
                         strokeWidth={1}
                       />
                       {blogs.date}
                     </p>
                     <p className="flex gap-1 justify-center items-center">
-                      <Eye className="text-primary w-6 h-6" strokeWidth={1} />
+                      <Eye
+                        className="text-primary  md:w-6 md:h-6 w-4 h-4"
+                        strokeWidth={1}
+                      />
                       {blogs.views}
                     </p>
                     <p className="flex gap-1 justify-center items-center">
                       <MessageCircle
-                        className="text-primary w-6 h-6"
+                        className="text-primary md:w-6 md:h-6 w-4 h-4"
                         strokeWidth={1}
                       />
                       1 comment
                     </p>
-                    <div></div>
+                    {/* <div></div> */}
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="">dkj</div>
+
+          {/* side bar  */}
+
+          <SideBar />
         </div>
       </div>{" "}
     </div>

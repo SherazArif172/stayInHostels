@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Travel",
+    "path": "#"
+  },
+  {
+    "name": "Room",
+    "path": "#"
+  },
+  {
+    "name": "People",
+    "path": "#"
+  },
+  {
+    "name": "Guide",
+    "path": "#"
+  },
+  {
+    "name": "Season",
+    "path": "#"
+  },
+  {
+    "name": "City",
+    "path": "#"
+  },
+  {
+    "name": "Sights",
+    "path": "#"
+  }
+]

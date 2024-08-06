@@ -78,8 +78,8 @@ const Owner = () => {
             Urna id volutpat lacus laoreet. Viverra vitae <br /> congue eu
             consequat ac
           </p>
-          <div className="border border-black md:mt-10 mt-7 w-80 rounded-lg px-4 flex items-center ">
-            <Input placeholder="Email adress" />{" "}
+          <div className="border border-black md:mt-10 mt-7 w-80 rounded-lg px-4 flex bg-white items-center ">
+            <Input placeholder="Email adress" />
             <div className="animate-pulse relative z-10 h-full">
               <ArrowRight className="w-8  " />
             </div>
