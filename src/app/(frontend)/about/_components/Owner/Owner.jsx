@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Owner = () => {
   return (
@@ -64,7 +65,9 @@ const Owner = () => {
             Tellus mauris a diam maecenas sed enim. Facilisi etiam dignissim
             diam quis enim lobortis scelerisque <br /> fermentum
           </p>
-          <Button className="mt-7">View rooms</Button>
+          <Link href={"/rooms"}>
+            <Button className="mt-7">View rooms</Button>
+          </Link>{" "}
         </motion.div>
         <motion.div
           initial={{ x: 150, opacity: 0.5 }}

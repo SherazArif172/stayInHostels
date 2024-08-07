@@ -79,7 +79,9 @@ const Facilities = () => {
           transition={{ duration: 0.5 }}
           className="mt-10 flex md:flex-row flex-col-reverse items-center gap-4"
         >
-          <Button className="sm:w-auto w-full">Book now</Button>
+          <Link href={"/rooms"}>
+            <Button className="sm:w-auto w-full">Book now</Button>
+          </Link>
           <Link href={"#"} className="flex gap-2 text-blue-900 font-semibold">
             More about <ArrowRight className="w-4 self-center" />
           </Link>

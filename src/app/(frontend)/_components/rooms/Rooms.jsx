@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import Card from "./_components/Card";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Rooms = () => {
   return (
@@ -24,9 +25,11 @@ const Rooms = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-primary-cstm text-primary font-bold">
-            View all rooms
-          </Button>
+          <Link href={"/rooms"}>
+            <Button className="bg-primary-cstm text-primary font-bold">
+              View all rooms
+            </Button>
+          </Link>
         </motion.div>
       </div>
       <Card />

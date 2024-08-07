@@ -27,9 +27,11 @@ const blogs = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Button className="bg-primary-cstm text-primary font-extrabold">
-            View all news
-          </Button>
+          <Link href={"/news"}>
+            <Button className="bg-primary-cstm text-primary font-extrabold">
+              View all news
+            </Button>
+          </Link>
         </motion.div>
       </div>
       <div className="mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">

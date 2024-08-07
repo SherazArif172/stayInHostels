@@ -11,9 +11,7 @@ const NotFound = () => {
           faucibus turpis in eu mi bibendum
         </p>
       </div>
-      <div>
-        <Image src={not_found} />
-      </div>
+      <div>{/* <Image src={not_found} /> */}</div>
     </div>
   );
 };
