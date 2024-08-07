@@ -71,7 +71,7 @@ const page = () => {
         >
           <Accordion type="single" collapsible className="w-full h-full">
             {Faq.map((faq, index) => (
-              <AccordionItem value="item-1" key={index}>
+              <AccordionItem value={faq.value} key={index}>
                 <AccordionTrigger>{faq.question}</AccordionTrigger>
                 <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
