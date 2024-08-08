@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 // import { tree } from "next/dist/build/templates/app-page";
 
 const Choose = () => {
@@ -23,9 +24,11 @@ const Choose = () => {
         <br />
         Save up to 20% off the nightly rate on stays between 7-14 nights
       </p>
-      <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold hover:border border-primary-cstm">
-        Choose room
-      </Button>
+      <Link href={"/rooms"}>
+        <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold hover:border border-primary-cstm">
+          Choose room
+        </Button>
+      </Link>
     </motion.div>
   );
 };

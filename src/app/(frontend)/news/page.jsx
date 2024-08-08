@@ -36,7 +36,7 @@ const news = () => {
                 // whileInView={{ y: 0, opacity: 1 }}
                 // viewport={{ once: true }}
                 // transition={{ duration: 0.5 }}
-                className="shadow-custom flex md:flex-row flex-col justify-center items-center mt-7 group "
+                className="shadow-custom flex md:flex-row flex-col justify-center items-center mt-7 group"
                 key={index}
               >
                 <div className="relative  aspect-[13/11] w-full h-full overflow-hidden md:rounded-l-lg rounded-t-lg">

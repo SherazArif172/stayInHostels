@@ -40,14 +40,14 @@ const Faqs = () => {
       // transition={{ duration: 0.5 }}
       // className="mt-8"
       >
-        {Faq.map((faq, index) => (
-          <Accordion key={index} type="single" collapsible className="w-full">
-            <AccordionItem value={faq.value}>
+        <Accordion type="single" collapsible className="w-full">
+          {Faq.map((faq, index) => (
+            <AccordionItem value={faq.value} key={index}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent>{faq.answer}</AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
+          ))}
+        </Accordion>
       </div>
     </div>
   );
