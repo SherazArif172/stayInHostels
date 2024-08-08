@@ -1,4 +1,4 @@
-import { Mulish } from "next/font/google";
+import { Mulish } from "@next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";

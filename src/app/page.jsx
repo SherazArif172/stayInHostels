@@ -19,6 +19,7 @@ const Gallery = dynamic(() =>
 // Now you can use these components in your application
 
 export default function Home() {
+  // throw new Error("error");
   return (
     <main>
       <Hero />
