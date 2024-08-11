@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Reviews from "./(frontend)/_components/reviews/Reviews";
 
 const Hero = dynamic(() => import("./(frontend)/_components/hero/Hero"));
 const Rooms = dynamic(() => import("./(frontend)/_components/rooms/Rooms"));

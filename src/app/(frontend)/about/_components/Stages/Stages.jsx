@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Stages = () => {
   return (
-    <div className="flex lg:flex-row flex-col md:gap-16 gap-9 lg:px-16 px-4 lg:py-16 py-6 m-auto max-w-7xl ">
+    <div className="flex lg:flex-row flex-col md:gap-16 gap-9 lg:px-16 px-4 lg:py-16 py-6 m-auto max-w-[1920px] ">
       <div className="w-full ">
         <motion.p
           initial={{ x: -150, opacity: 0.5 }}

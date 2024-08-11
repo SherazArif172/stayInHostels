@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Contacts = () => {
   return (
-    <div className="flex lg:flex-row flex-col max-w-7xl m-auto lg:pt-16 pt-4 lg:gap-0 gap-8">
+    <div className="flex lg:flex-row flex-col max-w-[1920px] m-auto lg:pt-16 pt-4 lg:gap-0 gap-8">
       <div className="lg:px-16 self-center w-full px-4">
         <motion.p
           initial={{ y: -150, opacity: 0.5 }}

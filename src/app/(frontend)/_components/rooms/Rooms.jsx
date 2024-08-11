@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Rooms = () => {
   return (
-    <div className="lg:px-16 lg:py-28 py-16 max-w-7xl m-auto">
+    <div className="lg:px-16 lg:py-28 py-16 max-w-[1920px] m-auto">
       <div className="flex justify-between items-center lg:mx-0 mx-5">
         <motion.p
           initial={{ x: -150, opacity: 0.5 }}

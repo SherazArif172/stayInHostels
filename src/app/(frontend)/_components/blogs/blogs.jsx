@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const blogs = () => {
   return (
-    <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
+    <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-[1920px] m-auto">
       <div className="flex justify-between">
         <motion.p
           initial={{ x: -150, opacity: 0.5 }}

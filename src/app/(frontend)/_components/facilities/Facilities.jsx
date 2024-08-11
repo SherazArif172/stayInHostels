@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const Facilities = () => {
   return (
-    <div className="flex lg:flex-row flex-col max-w-7xl m-auto">
+    <div className="flex lg:flex-row flex-col max-w-[1920px] m-auto">
       <div className="lg:w-1/2 md:p-16 px-3 lg:py-16 py-8 ">
         <motion.p
           initial={{ y: 150, opacity: 0.5 }}

@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const RoomCards = () => {
   return (
-    <div className="lg:py-16 py-8 lg:px-16 px-4 max-w-7xl m-auto">
+    <div className="lg:py-16 py-8 lg:px-16 px-4  m-auto">
       {/* Main div */}
 
       <div>

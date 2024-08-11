@@ -16,7 +16,7 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="flex justify-between items-center lg:px-10 md:px-7 px-4 py-8 max-w-7xl m-auto">
+      <nav className="flex justify-between items-center lg:px-10 md:px-7 px-4 py-8 max-w-[1920px] m-auto">
         <Link href="/">
           <div className="flex gap-2">
             <Image
@@ -24,7 +24,7 @@ const Navbar = () => {
               width={100}
               height={49}
               alt="image"
-              className="max-w-7xl"
+              className="max-w-[1920px]"
             />
           </div>
         </Link>

@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 const page = () => {
   return (
     <div className=" ">
-      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
+      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-[1920px] m-auto">
         <Link href="/" className="text-primary font-semibold">
           Home
         </Link>{" "}
@@ -35,7 +35,7 @@ const page = () => {
       </div>
       <FaqQuestions />
 
-      <div className="lg:py-16 py-8 lg:px-16 px-4   m-auto max-w-7xl">
+      <div className="lg:py-16 py-8 lg:px-16 px-4   m-auto max-w-[1920px]">
         {/* <div>
           <Select>
             <SelectTrigger className="w-[180px]">

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
-    <div className="lg:py-16 py-8 lg:px-14 px-4 m-auto max-w-7xl">
+    <div className="lg:py-16 py-8 lg:px-14 px-4 m-auto max-w-[1920px]">
       <div className="flex justify-between items-center">
         <motion.p
           initial={{ x: -150, opacity: 0.5 }}

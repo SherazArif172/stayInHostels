@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Benifits = () => {
   return (
-    <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4 max-w-7xl m-auto">
+    <div className="lg:pt-16 pt-8 lg:pb-16  lg:px-16 px-4 max-w-[1920px] m-auto">
       <motion.div
         initial={{ y: 150, opacity: 0.5 }}
         whileInView={{ y: 0, opacity: 1 }}
