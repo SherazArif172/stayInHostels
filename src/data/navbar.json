@@ -18,5 +18,9 @@
   {
     "title": "FAQs",
     "path": "/faqs"
+  },
+  {
+    "title": "Single",
+    "path": "/sin"
   }
 ]
