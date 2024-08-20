@@ -5,7 +5,7 @@ import RoomCards from "./RoomCards/RoomCards";
 const page = () => {
   return (
     <div>
-      <div className="bg-primary-bgg h-44 p-14 max-w-[1920px] m-auto">
+      <div className="bg-primary-bgg h-44 p-14 max-w-7xl m-auto">
         <div className="text-lg">
           <Link href="/" className="text-primary font-semibold">
             Home

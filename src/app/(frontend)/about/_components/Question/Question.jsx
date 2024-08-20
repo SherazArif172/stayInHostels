@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Question = () => {
   return (
-    <div className="lg:px-16 px-4 lg:py-28 py-4 flex lg:flex-row flex-col lg:gap-8 gap-6 max-w-[1920px] m-auto bg-primary-bgg">
+    <div className="lg:px-16 px-4 lg:py-28 py-4 flex lg:flex-row flex-col lg:gap-8 gap-6 max-w-7xl m-auto bg-primary-bgg">
       <div className="w-full lg:self-center">
         <motion.p
           initial={{ y: 150, opacity: 0.5 }}

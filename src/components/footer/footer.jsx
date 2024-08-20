@@ -15,7 +15,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const footer = () => {
   return (
     <footer>
-      <div className="text-white bg-primary py-16 md:px-8 px-4 w-full m-auto  max-w-[1920px]">
+      <div className="text-white bg-primary py-16 md:px-8 px-4 w-full m-auto  max-w-7xl">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 md:gap-28 gap-4 ">
           <div className=" ">
             <div className="flex items-center gap-2">

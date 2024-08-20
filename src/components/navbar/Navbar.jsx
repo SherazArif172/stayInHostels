@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <motion.header
-      className="max-w-[1920px] min-h-[108px] m-auto   z-20 bg-background"
+      className="max-w-7xl min-h-[108px] m-auto   z-20 bg-background"
       initial={{ y: -90, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}

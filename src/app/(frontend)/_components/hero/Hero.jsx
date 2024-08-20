@@ -10,7 +10,7 @@ import { Calendar } from "@/components/ui/calendar";
 
 const Hero = () => {
   return (
-    <div className="flex lg:flex-row flex-col py-9  relative  max-w-[1920px] lg:bg-background bg-primary-bgg m-auto">
+    <div className="flex lg:flex-row flex-col py-9  relative  max-w-7xl lg:bg-background bg-primary-bgg m-auto">
       <div className="flex justify-center items-center lg:pl-7 lg:h-[700px] lg:pt-0 pt-12">
         <div className="lg:h-[560px] lg:w-[700px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg">
           <motion.h1

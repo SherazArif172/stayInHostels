@@ -14,14 +14,14 @@ const RoomCards = () => {
     <div className="lg:py-16 py-8 lg:px-16 px-4  m-auto">
       {/* Main div */}
 
-      <div>
+      <div className="max-w-6xl m-auto">
         {roomsData.map((room, index) => (
           <motion.div
             initial={{ y: 150, opacity: 0.5 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="flex lg:flex-row flex-col lg:items-center shadow-custom rounded-lg mt-6"
+            className="flex lg:flex-row flex-col lg:items-center shadow-custom rounded-lg mt-6 "
             key={index}
           >
             <div className="relative lg:aspect-[15/10] aspect-video lg:max-w-96 w-full lg:rounded-l-lg rounded-t-lg overflow-hidden">
@@ -55,7 +55,7 @@ const RoomCards = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:w-8/12 md:text-end">
+              <div className="md:w-full  md:text-end">
                 <p className="md:text-5xl text-3xl font-semibold mt-6">
                   ${room.offer1}{" "}
                   <span className="text-base font-normal"> / 1 night</span>
