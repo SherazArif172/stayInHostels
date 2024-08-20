@@ -36,7 +36,7 @@ const SideBar = () => {
               className="relative w-fit group  text-foreground/70 hover-transition"
               key={index}
             >
-              <Link href={"/"}>
+              <Link href={tag.path}>
                 {tag.name}
 
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
