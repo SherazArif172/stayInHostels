@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import not_found from "../../public/not_found/404_Illustration.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const NotFound = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -42,9 +43,9 @@ const NotFound = () => {
           Tellus in metus vulputate eu scelerisque felis imperdiet proin. Sed
           faucibus turpis in eu mi bibendum
         </p>
-        <Button href="/" className="mt-5">
-          Back to Home
-        </Button>
+        <Link href={"/"}>
+          <Button className="mt-5">Back to Home</Button>
+        </Link>
       </div>
       <div className="relative w-full aspect-[12/12] flex justify-center items-center overflow-hidden">
         <Image
