@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import React from "react";
-import Image1 from "../../../../../public/gallery/full01.png";
+import Image1 from "../../../../../public/gallery/gallery04.png";
 import Image2 from "../../../../../public/gallery/full02.png";
 import Image3 from "../../../../../public/gallery/full03.png";
-import Image4 from "../../../../../public/gallery/gallery04.png";
+import Image4 from "../../../../../public/gallery/full01.png";
 import { Button } from "@/components/ui/button";
 import { Scan } from "lucide-react";
 import { motion } from "framer-motion";

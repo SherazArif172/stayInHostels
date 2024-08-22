@@ -25,8 +25,7 @@ const Contacts = () => {
           transition={{ duration: 0.5 }}
           className="mt-5 md:text-left text-center lg:w-96"
         >
-          Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta
-          nibh venenatis cras sed
+          Get in touch with us your next adventure starts here!
         </motion.p>
         <div className="mt-7 ">
           <motion.div

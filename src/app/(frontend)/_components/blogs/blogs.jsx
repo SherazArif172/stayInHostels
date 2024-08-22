@@ -67,12 +67,12 @@ const blogs = () => {
                 <p className="flex gap-1 justify-center items-center">
                   <CalendarDays
                     className="text-primary w-6 h-6"
-                    strokeWidth={1}
+                    strokeWidth={2}
                   />
                   {blogs.date}
                 </p>
                 <p className="flex gap-1 justify-center items-center">
-                  <Eye className="text-primary w-6 h-6" strokeWidth={1} />
+                  <Eye className="text-primary w-6 h-6" strokeWidth={2} />
                   {blogs.views}
                 </p>
                 <div></div>
