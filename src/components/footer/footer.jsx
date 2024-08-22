@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Imagee from "../../../public/navbar/Frame.png";
+import Imagee from "../../../public/navbar/footer.png";
 import Link from "next/link";
 import {
   Facebook,
@@ -14,21 +14,16 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const footer = () => {
   return (
-    <footer>
-      <div className="text-white bg-primary py-16 md:px-8 px-4 w-full m-auto  max-w-7xl">
+    <footer className="m-auto  max-w-[1920px] bg-primary">
+      <div className="text-white  py-16 md:px-8 px-4 w-full max-w-7xl m-auto">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 md:gap-28 gap-4 ">
           <div className=" ">
             <div className="flex items-center gap-2">
-              <Image src={Imagee} width={50} height={50} alt="image" />
-              <p className="md:text-3xl text-2xl self-center font-bold">
-                Hosteller
-              </p>
+              <Image src={Imagee} width={150} height={150} alt="image" />
             </div>
-            <p className="md:text-lg md:mt-5 mt-3">
-              Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
-              consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
-              placer orci nulla pellentesque.Ultrices gravida dictum fusce ut
-              placer orci nulla pellentesque
+            <p className="md:text-lg md:mt-5 mt-3 max-w-sm">
+              Where comfort meets community, offering a welcoming space for
+              free-spirited travelers to connect and explore.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -88,7 +83,7 @@ const footer = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-[82px] flex justify-center items-center md:text-base text-sm text-center">
+      <div className="min-h-[82px] bg-white flex justify-center items-center md:text-base text-sm text-center">
         merkulov © ClockInn Hostel Template all rights reserved Copyrights 2021
       </div>
     </footer>
