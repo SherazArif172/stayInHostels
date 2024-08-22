@@ -1,0 +1,25 @@
+[
+  {
+    "title1": "8.3",
+    "title2": "/10",
+    "comment": "1398 сomments",
+    "image": "/partners/bookingcom.png"
+  },
+  {
+    "title1": "4.6",
+    "title2": "/5",
+    "comment": "460 notes",
+    "image": "/partners/tripadvisor.png"
+  },
+  {
+    "title1": "4.9",
+    "title2": "/5",
+    "comment": "2389 notes",
+    "image": "/partners/google.png"
+  },
+  {
+    "title1": "98%",
+    "comment": "2389 recommendations",
+    "image": "/partners/hostelbookers.png"
+  }
+]

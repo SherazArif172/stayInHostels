@@ -6,6 +6,10 @@ const Rooms = dynamic(() => import("./(frontend)/_components/rooms/Rooms"));
 const Facilities = dynamic(() =>
   import("./(frontend)/_components/facilities/Facilities")
 );
+
+const Partners = dynamic(() =>
+  import("./(frontend)/_components/partners/Partners")
+);
 const Booking = dynamic(() =>
   import("./(frontend)/_components/booking/Booking")
 );
@@ -26,6 +30,7 @@ export default function Home() {
       <Hero />
       <Rooms />
       <Facilities />
+      <Partners />
       {/* <Reviews /> */}
       <Booking />
       <Gallery />
