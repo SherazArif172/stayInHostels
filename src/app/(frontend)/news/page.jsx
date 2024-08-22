@@ -42,7 +42,7 @@ const news = () => {
                     className="w-full h-full object-cover group-hover:scale-110 duration-500 lg:rounded-l-lg rounded-t-lg"
                     alt="image"
                   />
-                  <p className="absolute right-0 top-7 bg-white p-2 rounded-l-lg text-primary font-bold">
+                  <p className="absolute right-0 top-7 bg-white p-2 rounded-l-lg text-primary font-extrabold">
                     {blogs.topic}
                   </p>
                 </div>
