@@ -28,8 +28,9 @@ const Booking = () => {
             transition={{ duration: 0.5 }}
             className="mt-4 lg:w-auto md:w-[480px]"
           >
-            Discover affordable stays that don't compromise on comfort, offering
-            the perfect balance of quality and value for every traveler.
+            Discover affordable stays that don&apos;t compromise on comfort,
+            offering the perfect balance of quality and value for every
+            traveler.
           </motion.p>
           <div className="mt-4">
             <motion.div

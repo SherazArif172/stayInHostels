@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Bookingcom from "../../../../../public/partners/bookingcom.png";
 import PartnerData from "../../../../data/partner.json";
 
 const Partners = () => {
@@ -15,7 +14,13 @@ const Partners = () => {
             </p>
             <p className="mt-1">{data.comment}</p>
 
-            <Image src={data.image} width={140} height={140} className="mt-3" />
+            <Image
+              src={data.image}
+              width={140}
+              height={140}
+              className="mt-3"
+              alt="image"
+            />
           </div>
         ))}
       </div>
