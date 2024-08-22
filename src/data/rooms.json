@@ -2,7 +2,7 @@
   {
     "image": "/roomsRout/room1.png",
     "title": "Standard Twin Room Private Shared Bathroom",
-    "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "description": "Comfortable twin beds in a private room with access to a shared bathroom.",
     "sleep": "2 Sleeps",
     "bed1": "1 bunk bed",
     "bed2": "1 bunk bed",
@@ -12,7 +12,7 @@
   {
     "image": "/roomsRout/room2.png",
     "title": "Standard 6 Bed Female Dorm Shared Bathroom",
-    "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "description": "Spacious dormitory with six beds exclusively for female guests, featuring shared bathroom facilities.",
     "sleep": "2 Sleeps",
     "bed1": "1 bunk bed",
     "bed2": "1 bunk bed",
@@ -22,7 +22,7 @@
   {
     "image": "/roomsRout/room3.png",
     "title": "Comfort Superior Double Bed Private Ensuite",
-    "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "description": "Elegant double bed room with a private ensuite bathroom for added convenience.",
     "sleep": "3 Sleeps",
     "bed1": "1 full bed",
     "bed2": "1 twin bed",
@@ -32,7 +32,7 @@
   {
     "image": "/roomsRout/room4.png",
     "title": "Standard Triple Room with Shared Bathroom",
-    "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "description": "Cozy triple room perfect for families or friends, with access to a shared bathroom.",
     "sleep": "2 Sleeps",
     "bed1": "2 twin beds",
     "bed2": "2 double beds",
@@ -42,7 +42,7 @@
   {
     "image": "/roomsRout/room5.png",
     "title": "Standard Double Bed Private Shared Bathroom",
-    "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "description": "Inviting double bed room offering privacy with access to a shared bathroom.",
     "sleep": "1 adult",
     "bed1": "1 full bed",
     "bed2": "1 single bed",

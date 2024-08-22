@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import ROom from "../../../../../public/roomsRout/room1.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { BedSingle, User } from "lucide-react";
@@ -38,7 +37,7 @@ const RoomCards = () => {
                   {" "}
                   <Link
                     href="/rooms"
-                    className="font-semibold text-2xl hover:text-primary duration-300 "
+                    className="font-extrabold text-2xl hover:text-primary duration-300 "
                   >
                     {room.title}
                   </Link>
@@ -56,11 +55,11 @@ const RoomCards = () => {
                 </div>
               </div>
               <div className="md:w-full  md:text-end">
-                <p className="md:text-5xl text-3xl font-semibold mt-6">
+                <p className="md:text-5xl text-3xl font-extrabold mt-6">
                   ${room.offer1}{" "}
                   <span className="text-base font-normal"> / 1 night</span>
                 </p>
-                <p className="font-semibold text-2xl mt-6 text-foreground/70">
+                <p className="font-extrabold text-2xl mt-6 text-foreground/70">
                   ${room.offer2}{" "}
                   <span className="text-base font-normal">/ 7 nights</span>
                 </p>
