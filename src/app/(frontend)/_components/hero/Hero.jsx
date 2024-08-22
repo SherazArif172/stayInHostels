@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Heroimg from "../../../../../public/hero/hero.jpg";
+import Heroimg from "../../../../../public/hero/hero.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Blocks, CalendarDays, ChevronDown, User } from "lucide-react";
@@ -10,51 +10,47 @@ import { Calendar } from "@/components/ui/calendar";
 
 const Hero = () => {
   return (
-    <div className=" relative  max-w-[1920px] lg:bg-background bg-primary-bgg m-auto">
-      <div className="flex lg:flex-row justify-end flex-col py-9  relative  max-w- lg:bg-background bg-primary-bgg m-auto">
-        <div className="flex justify-end items-center lg:pl-7 lg:h-[700px] lg:pt-0 pt-12">
-          <div className="lg:h-[560px] lg:w-[900px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg">
-            <div className="pl-36">
-              <motion.h1
-                className="text-5xl  font-extrabold lg:max-w-lg  "
-                initial={{ y: 150, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <span className="text-primary">STAY INN</span> HOSTELS — Your
-                Gateway to Memorable{" "}
-                <span className="text-primary">Adventures</span>
-              </motion.h1>
-              <motion.p
-                className="max-w-md my-8 pl-4 border-l-[5px] border-primary text-lg "
-                initial={{ y: 150, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                Where comfort meets community, offering a welcoming space for
-                free-spirited travelers to connect and explore.
-              </motion.p>
-            </div>
-          </div>
+    <div className="flex lg:flex-row flex-col justify-end py-9  relative  max-w-[1920px] lg:bg-background bg-primary-bgg m-auto">
+      <div className="flex justify-center items-center lg:pl-7 lg:h-[700px] lg:pt-0 pt-12">
+        <div className="lg:h-[560px] lg:w-[700px] w-screen lg:bg-primary-bgg lg:pl-9 pl-3 lg:py-20 rounded-l-lg ">
+          <motion.h1
+            className="text-5xl  font-extrabold  lg:max-w-xl "
+            initial={{ y: 150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="text-primary">STAY INN</span> HOSTELS — Your
+            Gateway to Memorable{" "}
+            <span className="text-primary"> Adventures</span>
+          </motion.h1>
+          <motion.p
+            className="max-w-lg my-8 pl-4 border-l-[3px] border-primary text-lg "
+            initial={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Egestas pretium aenean pharetra magna ac. Et tortor consequat id
+            porta nibh venenatis cras sed. Vel turpis nunc eget lorem dolor sed
+          </motion.p>
         </div>
-        <motion.div
-          className="relative aspect-video z-10 w-full lg:block hidden max-w-3xl"
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Image
-            src={Heroimg}
-            fill
-            className="object-cover w-full h-full"
-            alt="image"
-          />
-        </motion.div>
-
-        <Booking />
-        <MobileBook />
       </div>
+      <motion.div
+        className="relative aspect-video z-10 w-full lg:block hidden max-w-4xl"
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        <Image
+          src={Heroimg}
+          fill
+          className="object-cover w-full h-full"
+          alt="image"
+        />
+      </motion.div>
+
+      <Booking />
+      <MobileBook />
     </div>
   );
 };
@@ -66,7 +62,7 @@ const Booking = () => {
 
   return (
     <motion.div
-      className="lg:flex hidden rounded-md  shadow-custom w-[829px] lg:mt-0 mt-5 pl-14 lg:absolute lg:bottom-40 lg:left-[390px] z-10 bg-background "
+      className="lg:flex hidden rounded-md  shadow-custom w-[829px] lg:mt-0 mt-5 pl-14 lg:absolute lg:bottom-44 lg:left-16 z-10 bg-background "
       initial={{ y: 150, opacity: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
