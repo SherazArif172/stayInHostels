@@ -11,26 +11,26 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <motion.header
-      className="max-w-7xl min-h-[108px] m-auto   z-20 bg-background"
+      className="max-w-[1920px] min-h-[108px] m-auto   z-20 bg-background"
       initial={{ y: -90, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="flex justify-between items-center lg:px-10 md:px-7 px-4 py-8 max-w-[1920px] m-auto">
+      <nav className="flex justify-between items-center lg:px-10 md:px-7 px-4 py-8 max-w-5xl m-auto">
         <Link href="/">
           <div className="flex gap-2">
             <Image
               src={Navimg}
-              width={100}
-              height={49}
+              width={120}
+              height={59}
               alt="image"
-              className="max-w-[1920px]"
+              className=""
             />
           </div>
         </Link>
 
         <div className="lg:block hidden  bg-white transition-all duration-300  self-center">
-          <ul className="flex items-center gap-16 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
+          <ul className="flex items-center gap-12 w-full px-0  mt-0 h-auto min-h-full  bg-auto bg-white">
             {navData.map((nav, index) => (
               <li
                 className="relative w-fit group  text-foreground/70 hover-transition"

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import not_found from "../../public/not_found/404_Illustration.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Error({ error, reset }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -41,9 +42,9 @@ export default function Error({ error, reset }) {
         <p className="md:text-xl text-lg">
           We appologize for inconvenience please try again later.
         </p>
-        <Button href="/" className="mt-5">
-          Back to Home
-        </Button>
+        <Link href="/">
+          <Button className="mt-5">Back to Home</Button>
+        </Link>
       </div>
     </div>
   );

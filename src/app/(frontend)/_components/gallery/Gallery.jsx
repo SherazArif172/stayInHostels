@@ -9,6 +9,7 @@ import Image4 from "../../../../../public/gallery/gallery04.webp";
 import { Button } from "@/components/ui/button";
 import { Scan } from "lucide-react";
 import { motion } from "framer-motion";
+// import ImageGallery from "react-image-gallery";
 
 const Gallery = () => {
   return (
@@ -44,7 +45,7 @@ const Gallery = () => {
           <Image
             src={Image1}
             fill
-            className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-lg"
+            className=" w-full h-full object-cover group-hover:scale-110 duration-500 rounded-lg"
             alt="image"
           />
           <div className="w-full h-full hover:bg-primary/70 duration-500 z-10 relative flex justify-center items-center group">
