@@ -1,32 +1,27 @@
 [
   {
-    "question": "What is HTML5?",
+    "question": "How do you choose the right hostel?",
     "value": "1",
-    "answer": "HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages. It is used to structure and present content on the web."
+    "answer": "Look for hostels with good reviews, central locations which you need."
   },
   {
-    "question": "What is CSS?",
+    "question": "How many people are in a hostel room?",
     "value": "2",
-    "answer": "CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on screen, paper, or in other media."
+    "answer": "Room sizes vary, typically accommodating 4 to 12 guests."
   },
   {
-    "question": "What is JavaScript?",
+    "question": "How do I keep my things safe in a hostel?",
     "value": "3",
-    "answer": "JavaScript is a programming language that is commonly used to create interactive effects within web browsers."
+    "answer": "Use the hostel-provided lockers or secure your belongings with a personal lock."
   },
   {
-    "question": "What is React?",
+    "question": "How do you stay safe in a hostel?",
     "value": "4",
-    "answer": "React is a JavaScrip t library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies."
+    "answer": "Stay aware of your surroundings and follow hostel safety guidelines."
   },
   {
-    "question": "What is Git?",
+    "question": "Are there private rooms in Hostels?",
     "value": "5",
-    "answer": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed to handle everything from small to very large projects with speed and efficiency."
-  },
-  {
-    "question": "What is API?",
-    "value": "6",
-    "answer": "API stands for Application Programming Interface. It is a set of rules that allows different software entities to communicate with each other."
+    "answer": "Yes, many hostels offer private rooms alongside shared dormitories."
   }
 ]

@@ -5,7 +5,7 @@ import { Banknote, CalendarCheck, LockKeyholeOpen, Phone } from "lucide-react";
 import Image from "next/image";
 import { fromJSON } from "postcss";
 import React from "react";
-import Bookingimg from "../../../../../../public/about_booking/booking.webp";
+import Bookingimg from "../../../../../../public/about_booking/booking.png";
 import { motion } from "framer-motion";
 
 const Stages = () => {
@@ -17,7 +17,7 @@ const Stages = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="md:text-4xl text-3xl font-bold"
+          className="md:text-4xl text-3xl font-extrabold"
         >
           Stages of booking a room
         </motion.p>
@@ -35,14 +35,13 @@ const Stages = () => {
             <div className="p-7 bg-primary-cstm rounded-lg">
               <CalendarCheck
                 className="self-center text-primary w-10 h-10"
-                strokeWidth={1}
+                strokeWidth={2}
               />
             </div>
             <div className="">
-              <p className="text-2xl font-semibold">Room reservation</p>
+              <p className="text-2xl font-extrabold">Room reservation</p>
               <p className="mt-1">
-                Integer eget aliquet nibh praesent tristique magna sit amet
-                purus{" "}
+                Secure your preferred room in just a few clicks.
               </p>
             </div>
           </motion.div>
@@ -56,15 +55,15 @@ const Stages = () => {
             <div className="p-7 bg-primary-cstm rounded-lg">
               <Banknote
                 className="self-center text-primary w-10 h-10"
-                strokeWidth={1}
+                strokeWidth={2}
               />
             </div>
             <div className="">
-              <p className="text-2xl font-semibold">
+              <p className="text-2xl font-extrabold">
                 Filling in documents and payment
               </p>
               <p className="mt-1">
-                Leo duis ut diam quam. Sed velit dignissim sodales ut eu{" "}
+                Complete the paperwork and payment easily online.
               </p>
             </div>
           </motion.div>
@@ -78,14 +77,13 @@ const Stages = () => {
             <div className="p-7 bg-primary-cstm rounded-lg">
               <LockKeyholeOpen
                 className="self-center text-primary w-10 h-10"
-                strokeWidth={1}
+                strokeWidth={2}
               />
             </div>
             <div className="">
-              <p className="text-2xl font-semibold">Сheck in hostel</p>
+              <p className="text-2xl font-extrabold">Сheck in hostel</p>
               <p className="mt-1">
-                Vulputate enim nulla aliquet porttitor. Sagittis nisl rhoncus
-                mattis rhoncus{" "}
+                Enjoy a smooth and quick check-in process upon arrival.
               </p>
             </div>
           </motion.div>

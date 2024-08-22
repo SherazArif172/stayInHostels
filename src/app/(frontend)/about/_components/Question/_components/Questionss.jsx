@@ -16,7 +16,7 @@ const Questionss = () => {
       transition={{ duration: 0.5 }}
       className="w-full bg-white shadow-custom md:px-16 px-4 md:py-16 py-8 rounded-lg max-w-full"
     >
-      <p className="md:text-4xl text-3xl font-bold">
+      <p className="md:text-4xl text-3xl font-extrabold">
         We are ready answer your question{" "}
       </p>
       <div className="mt-10">
@@ -33,7 +33,7 @@ const Questionss = () => {
           <Textarea placeholder="Message" />
         </div>
       </div>
-      <Button className="mt-10 sm:w-auto w-full">Send message</Button>
+      <Button className="mt-10 sm:w-auto w-full">Get in touch</Button>
     </motion.div>
   );
 };

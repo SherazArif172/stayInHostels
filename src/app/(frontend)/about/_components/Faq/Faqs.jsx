@@ -19,7 +19,7 @@ const Faqs = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="md:text-4xl text-3xl font-bold"
+          className="md:text-4xl text-3xl font-extrabold"
         >
           Frequently asked questions about hostel
         </motion.p>
@@ -30,16 +30,11 @@ const Faqs = () => {
           transition={{ duration: 0.5 }}
           className="lg:text-right lg:mt-0 mt-4"
         >
-          Diam phasellus vestibulum lorem sed risus ultricies tristique
+          Find quick answers to common questions about your stay at Stay Inn
+          Hostels.{" "}
         </motion.p>
       </div>
-      <div
-      // initial={{ y: 150, opacity: 0.5 }}
-      // whileInView={{ y: 0, opacity: 1 }}
-      // viewport={{ once: true }}
-      // transition={{ duration: 0.5 }}
-      // className="mt-8"
-      >
+      <div>
         <Accordion type="single" collapsible className="w-full">
           {Faq.map((faq, index) => (
             <AccordionItem value={faq.value} key={index}>
