@@ -1,6 +1,6 @@
 [
   {
-    "image": "/roomsRout/room1.webp",
+    "image": "/roomsRout/room1.png",
     "title": "Standard Twin Room Private Shared Bathroom",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "sleep": "2 Sleeps",
@@ -10,7 +10,7 @@
     "offer2": "100"
   },
   {
-    "image": "/roomsRout/room2.webp",
+    "image": "/roomsRout/room2.png",
     "title": "Standard 6 Bed Female Dorm Shared Bathroom",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "sleep": "2 Sleeps",
@@ -20,7 +20,7 @@
     "offer2": "80"
   },
   {
-    "image": "/roomsRout/room3.webp",
+    "image": "/roomsRout/room3.png",
     "title": "Comfort Superior Double Bed Private Ensuite",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "sleep": "3 Sleeps",
@@ -30,7 +30,7 @@
     "offer2": "220"
   },
   {
-    "image": "/roomsRout/room4.webp",
+    "image": "/roomsRout/room4.png",
     "title": "Standard Triple Room with Shared Bathroom",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "sleep": "2 Sleeps",
@@ -40,7 +40,7 @@
     "offer2": "115"
   },
   {
-    "image": "/roomsRout/room5.webp",
+    "image": "/roomsRout/room5.png",
     "title": "Standard Double Bed Private Shared Bathroom",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "sleep": "1 adult",
