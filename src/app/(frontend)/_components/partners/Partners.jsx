@@ -5,7 +5,7 @@ import PartnerData from "../../../../data/partner.json";
 
 const Partners = () => {
   return (
-    <div className="lg:py-16 py-8 bg-primary-bgg max-w-[1920px] m-auto">
+    <div className="lg:py-16 py-8 bg-primary-bgg max-w-[1920px] m-auto mt-28">
       <div className="max-w-7xl grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6  items-center m-auto">
         {PartnerData.map((data, index) => (
           <div key={index} className="m-auto">

@@ -3,14 +3,14 @@
 import { Bed, HandHelping, Hotel } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import Bookingg from "../../../../../public/booking/booking.webp";
+import Bookingg from "../../../../../public/booking/booking.png";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const Booking = () => {
   return (
-    <div className="lg:py-24 py-8 bg-primary-bgg lg:my-28 max-w-7xl m-auto">
-      <div className="flex lg:flex-row flex-col  lg:py-0 py-4  relative w-full  ">
+    <div className="lg:py-24 py-8 bg-primary-bgg lg:my-28 max-w-[1920px] m-auto">
+      <div className="flex lg:flex-row flex-col  lg:py-0 py-4  relative w-full  max-w-7xl m-auto">
         <div className="lg:px-16 px-6 py-16 lg:w-1/2 w-full lg:m-0 m-auto">
           <motion.p
             initial={{ y: 150, opacity: 0.5 }}
@@ -28,8 +28,8 @@ const Booking = () => {
             transition={{ duration: 0.5 }}
             className="mt-4 lg:w-auto md:w-[480px]"
           >
-            Condimentum id venenatis a condimentum vitae sapien pellentesque
-            habitant. At augue eget arcu dictum varius duis at consectetur
+            Discover affordable stays that don't compromise on comfort, offering
+            the perfect balance of quality and value for every traveler.
           </motion.p>
           <div className="mt-4">
             <motion.div
@@ -44,9 +44,7 @@ const Booking = () => {
               </div>
               <div>
                 <p className="text-xl font-extrabold">Hostel territory</p>
-                <p className="w-48">
-                  Consequat interdum varius sit amet mattis
-                </p>
+                <p className="w-48">Relax in our inviting common areas.</p>
               </div>
             </motion.div>
             <motion.div
@@ -64,9 +62,7 @@ const Booking = () => {
               </div>
               <div>
                 <p className="text-xl font-extrabold">Accommodates guests</p>
-                <p className="w-48">
-                  Consequat interdum varius sit amet mattis
-                </p>
+                <p className="w-48">Comfortable rooms for every traveler.</p>
               </div>
             </motion.div>
             <motion.div
@@ -81,9 +77,7 @@ const Booking = () => {
               </div>
               <div>
                 <p className="text-xl font-extrabold">Grateful guests</p>
-                <p className="w-48">
-                  Consequat interdum varius sit amet mattis
-                </p>
+                <p className="w-48">Hear from satisfied travelers. </p>
               </div>
             </motion.div>
           </div>
