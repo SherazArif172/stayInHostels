@@ -20,9 +20,9 @@ const Choose = () => {
         It&apos;s simple the longer you stay, the more you save!
       </p>
       <p className="border-l-2 border-white pl-4 mt-4">
-        Save up to 30% on daily rate for stays longer than 14 nights <br />
+        Save up to 20% off the nightly rate on stays between 7-14 nights <br />
         <br />
-        Save up to 20% off the nightly rate on stays between 7-14 nights
+        Save up to 30% off the nightly rate on stays between 14-29 nights
       </p>
       <Link href={"/rooms"}>
         <Button className="mt-4 px-4 py-6 bg-primary-cstm text-primary font-semibold hover:border border-primary-cstm">

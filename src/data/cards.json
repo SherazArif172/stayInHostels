@@ -5,7 +5,7 @@
     "night": 1,
     "title": "Bed in 6-Bed Room with Shared Bathroom",
     "sleep": 2,
-    "beds": 2
+    "beds": "1 bunk"
   },
   {
     "image": "/rooms/rooms.png",
@@ -13,6 +13,6 @@
     "night": 1,
     "title": "Double Room with Private Bathroom",
     "sleep": 2,
-    "beds": 2
+    "beds": "2 twin"
   }
 ]

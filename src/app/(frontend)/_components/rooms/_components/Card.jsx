@@ -37,15 +37,15 @@ const Card = () => {
             <p className="text-2xl font-extrabold">{data.title}</p>
             <div className="flex gap-10">
               <div className="flex gap-2 justify-center items-center h-[50px]">
-                <User />
+                <User className="text-primary" />
                 <p className="text-lg ">{data.sleep} Sleeps</p>
               </div>
               <div className="flex gap-2 justify-center items-center">
-                <BedSingle />
+                <BedSingle className="text-primary" />
                 <p className="text-lg ">{data.beds} Bed</p>
               </div>
             </div>
-            <Link href={"#"} className="flex gap-2 text-blue-900 font-bold">
+            <Link href={"#"} className="flex gap-2 text-primary font-bold">
               see availablity <ArrowRight className="w-4" />
             </Link>
           </div>
