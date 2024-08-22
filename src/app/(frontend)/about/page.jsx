@@ -18,7 +18,7 @@ const page = () => {
             </Link>{" "}
             / About
           </div>
-          <p className="text-5xl font-semibold mt-2">About</p>
+          <p className="text-5xl font-extrabold mt-2">About</p>
         </div>
       </div>
       <Benifits />

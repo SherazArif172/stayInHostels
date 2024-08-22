@@ -15,8 +15,9 @@ const Benifits = () => {
         transition={{ duration: 0.5 }}
         className="flex md:flex-row flex-col justify-between lg:gap-28 gap-5"
       >
-        <p className="md:text-4xl text-3xl md:max-w-96 font-semibold">
-          The main benefits to choose Hosteller
+        <p className="md:text-4xl text-3xl md:max-w-96 font-extrabold">
+          The main <span className="text-primary">benefits</span> to choose Stay
+          Inn Hostels
         </p>
         <p className="md:text-right md:text-lg  md:w-5/12 px-2">
           Aliquam eleifend mi in nulla. Viverra nibh cras pulvinar mattis nunc
