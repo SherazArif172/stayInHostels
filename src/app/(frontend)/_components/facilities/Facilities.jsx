@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Facilitiec from "../../../../../public/facilities/facilities.webp";
+import Facilitiec from "../../../../../public/facilities/facilities.png";
 import Image from "next/image";
 import { ArrowRight, Wifi } from "lucide-react";
 import { MapPin } from "lucide-react";
@@ -13,8 +13,8 @@ import { motion } from "framer-motion";
 
 const Facilities = () => {
   return (
-    <div className="flex lg:flex-row flex-col max-w-7xl m-auto">
-      <div className="lg:w-1/2 md:p-16 px-3 lg:py-16 py-8 ">
+    <div className="flex lg:flex-row flex-col max-w-[1920px] m-auto">
+      <div className="lg:w-1/2 md:p-16 px-3 lg:py-16 py-8 flex flex-col justify-center">
         <motion.p
           initial={{ y: 150, opacity: 0.5 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -22,7 +22,8 @@ const Facilities = () => {
           transition={{ duration: 0.5 }}
           className="md:text-4xl text-2xl font-extrabold "
         >
-          We have everything you need
+          Unmatched <span className="text-primary">Convenience</span> and{" "}
+          <span className="text-primary">Comfort</span>
         </motion.p>
         <motion.p
           initial={{ y: 150, opacity: 0.5 }}
@@ -31,8 +32,9 @@ const Facilities = () => {
           transition={{ duration: 0.5 }}
           className="mt-6 text-lg"
         >
-          Posuere morbi leo urna molestie at elementum eu facilisis sed. Diam
-          phasellus vestibulum lorem sed risus ultricies tristique
+          Enjoy seamless convenience and unparalleled comfort with our
+          thoughtfully designed amenities and welcoming spaces tailored for the
+          modern traveler.
         </motion.p>
         <div className="grid md:grid-cols-1">
           <motion.div
@@ -67,7 +69,7 @@ const Facilities = () => {
                 strokeWidth={1}
                 className="w-14 h-14 text-primary"
               />
-              Parking place allocated to you
+              Parking space allocated to you
             </p>
           </motion.div>
         </div>
@@ -92,7 +94,7 @@ const Facilities = () => {
         transition={{ duration: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="lg:w-1/2 relative lg:aspect-[11/10] overflow-hidden lg:mx-0 mx-3"
+        className="lg:w-1/2 relative lg:aspect-[11/10] overflow-hidden lg:mx-0 mx-3 max-w-5xl max-h-[600px]"
       >
         <Image
           src={Facilitiec}
