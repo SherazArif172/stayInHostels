@@ -2,19 +2,22 @@ import Image from "next/image";
 import React from "react";
 import Imagee from "../../../public/navbar/footer.png";
 import Link from "next/link";
+import Tik from "../../../public/social/tikton.png";
 import {
   Facebook,
   Instagram,
   Linkedin,
+  Mail,
   MapPin,
   Phone,
   Twitter,
+  Youtube,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const footer = () => {
   return (
-    <footer className="m-auto  max-w-[1920px] bg-primary">
+    <footer className="m-auto  max-w-[1924px] bg-primary">
       <div className="text-white  py-16 md:px-8 px-4 w-full max-w-7xl m-auto">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 md:gap-28 gap-4 ">
           <div className=" ">
@@ -31,10 +34,13 @@ const footer = () => {
               <p className="md:text-2xl text-xl font-extrabold">Contact Us</p>
               <ul className="md:mt-6 mt-3 flex flex-col gap-6">
                 <li className="flex gap-4 items-center">
-                  <MapPin />
-                  <p className="lg:text-base text-sm">
-                    4826 Fadel Circles <br /> Darrylstad, AZ 90995
-                  </p>
+                  <Mail />
+                  <Link
+                    href="mailto:stayinnhostels@hotmail.com"
+                    className="lg:text-base text-sm"
+                  >
+                    stayinnhostels@hotmail.com
+                  </Link>
                 </li>
                 <li className="flex gap-4 items-center">
                   <Phone />
@@ -77,6 +83,12 @@ const footer = () => {
                 </Link>
                 <Link href="https://wa.me/03310008190">
                   <FaWhatsapp className="hover:scale-110 duration-300 w-6 h-6" />
+                </Link>
+                <Link href="https://www.youtube.com/@stayinnhostels">
+                  <Youtube className="hover:scale-110 duration-300 w-6 h-6" />
+                </Link>
+                <Link href="https://www.tiktok.com/@stayinnhostels">
+                  <Image src={Tik} width={20} height={20} alt="image" />
                 </Link>
               </div>
             </div>
