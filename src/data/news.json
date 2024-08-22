@@ -1,6 +1,6 @@
 [
   {
-    "image": "/news/img1.webp",
+    "image": "/news/img1.png",
     "topic": "Travel",
     "title": "How to Travel the World & Make a Difference",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",
@@ -9,7 +9,7 @@
     "comments": "1 comment"
   },
   {
-    "image": "/news/img2.webp",
+    "image": "/news/img2.png",
     "topic": "Tourist Guide",
     "title": "The Seven People You Always Meet Hosteling",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",
@@ -18,7 +18,7 @@
     "comments": "1 comment"
   },
   {
-    "image": "/news/img3.webp",
+    "image": "/news/img3.png",
     "topic": "City Sights",
     "title": "10 of the Most Underrated Cities in Europe",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",
@@ -27,7 +27,7 @@
     "comments": "1 comment"
   },
   {
-    "image": "/news/img4.webp",
+    "image": "/news/img4.png",
     "topic": "Tourist Guide",
     "title": "Things Hostels Do Better than Posh Hotels",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",
@@ -36,7 +36,7 @@
     "comments": "1 comment"
   },
   {
-    "image": "/news/img5.webp",
+    "image": "/news/img5.png",
     "topic": "Tourist Guide",
     "title": "How to Get a Good Night’s Sleep in a Hostel",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",
@@ -45,7 +45,7 @@
     "comments": "1 comment"
   },
   {
-    "image": "/news/img6.webp",
+    "image": "/news/img6.png",
     "topic": "Communication",
     "title": "Important Tips for Traveling with Friends",
     "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique. Mus mauris vitae ultricies leo integer malesuada nunc posuere",

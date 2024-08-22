@@ -32,14 +32,10 @@ const news = () => {
             {" "}
             {Blogss.map((blogs, index) => (
               <div
-                // initial={{ y: 150, opacity: 0.5 }}
-                // whileInView={{ y: 0, opacity: 1 }}
-                // viewport={{ once: true }}
-                // transition={{ duration: 0.5 }}
-                className="shadow-custom flex md:flex-row flex-col justify-center items-center mt-7 group"
+                className="shadow-custom flex md:flex-row flex-col justify-center items-center mt-7 group "
                 key={index}
               >
-                <div className="relative  aspect-[13/11] w-full h-full overflow-hidden md:rounded-l-lg rounded-t-lg">
+                <div className="relative  aspect-[15/15] w-full h-full overflow-hidden md:rounded-l-lg rounded-t-lg ">
                   <Image
                     src={blogs.image}
                     fill
@@ -50,7 +46,7 @@ const news = () => {
                     {blogs.topic}
                   </p>
                 </div>
-                <div className="sm:px-8 px-4 md:py-0 py-8">
+                <div className="sm:px-8 px-4 py-6">
                   <Link
                     href="#"
                     className="text-xl font-extrabold hover:text-primary duration-300"
