@@ -24,14 +24,16 @@ import { motion } from "framer-motion";
 const page = () => {
   return (
     <div className=" ">
-      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
-        <Link href="/" className="text-primary font-semibold">
-          Home
-        </Link>{" "}
-        / Frequently asked questions
-        <p className="md:text-5xl text-2xl font-semibold mt-2">
-          Frequently asked questions
-        </p>
+      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-[1920px] m-auto">
+        <div className="max-w-4xl m-auto">
+          <Link href="/" className="text-primary font-semibold">
+            Home
+          </Link>{" "}
+          / Frequently asked questions
+          <p className="md:text-5xl text-2xl font-extrabold mt-2">
+            Frequently asked questions
+          </p>
+        </div>
       </div>
       <FaqQuestions />
 
@@ -58,7 +60,7 @@ const page = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="sm:text-4xl text-2xl font-semibold text-center"
+          className="sm:text-4xl text-2xl font-extrabold text-center"
         >
           Frequently asked questions
         </motion.p>
@@ -69,7 +71,11 @@ const page = () => {
           transition={{ duration: 0.5 }}
           className="w-full mt-12"
         >
-          <Accordion type="single" collapsible className="w-full h-full">
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full h-full max-w-7xl m-auto"
+          >
             {Faq.map((faq, index) => (
               <AccordionItem value={faq.value} key={index}>
                 <AccordionTrigger>{faq.question}</AccordionTrigger>
