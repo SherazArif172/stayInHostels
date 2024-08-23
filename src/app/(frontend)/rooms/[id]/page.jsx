@@ -9,7 +9,6 @@ import { BedSingle, User } from "lucide-react";
 import Text from "./_components/text/Text";
 import LeaveComments from "./_components/text/LeaveComments";
 import Booking from "../../_components/booking/Booking";
-import Facilities from "../../_components/facilities/Facilities";
 import Stages from "../../about/_components/Stages/Stages";
 import Rooms from "../../_components/rooms/Rooms";
 
