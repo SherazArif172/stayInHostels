@@ -7,6 +7,8 @@ import Sofa from "../../../../../public/single room/sofa.png";
 import Bunk_bed from "../../../../../public/single room/bed/bunk-bed.png";
 import { BedSingle, User } from "lucide-react";
 import Text from "./_components/text/Text";
+import LeaveComments from "./_components/text/LeaveComments";
+import Booking from "../../_components/booking/Booking";
 
 const page = ({ params }) => {
   const id = params.id;
@@ -66,9 +68,11 @@ const page = ({ params }) => {
         <div>
           <div className="px-14">
             <Text />
+            <LeaveComments />
           </div>
         </div>
       </div>
+      <Booking />
     </div>
   );
 };
