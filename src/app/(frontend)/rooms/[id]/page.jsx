@@ -6,6 +6,7 @@ import Bathroom from "../../../../../public/single room/bathroom.png";
 import Sofa from "../../../../../public/single room/sofa.png";
 import Bunk_bed from "../../../../../public/single room/bed/bunk-bed.png";
 import { BedSingle, User } from "lucide-react";
+import Text from "./_components/text/Text";
 
 const page = ({ params }) => {
   const id = params.id;
@@ -63,20 +64,8 @@ const page = ({ params }) => {
           </div>
         </div>
         <div>
-          <p>
-            Experience unparalleled comfort and privacy in our Superior Double
-            Bed Private Ensuite. This spacious and elegantly furnished room
-            features a luxurious double bed designed for restful sleep and
-            relaxation. <br />
-            Enjoy the added convenience of a private ensuite bathroom, complete
-            with modern amenities and stylish fixtures, ensuring a serene and
-            comfortable stay. Perfect for both business and leisure travelers
-            seeking a touch of sophistication.
-          </p>
-          <div>
-            <p>
-              <span className="text-5xl font-extrabold">$59</span>/1 night
-            </p>
+          <div className="px-14">
+            <Text />
           </div>
         </div>
       </div>

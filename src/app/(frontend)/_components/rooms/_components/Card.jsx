@@ -5,7 +5,7 @@ import Image from "next/image";
 import { User, BedSingle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Cards from "../../../../../data/cards.json";
-import Choose from "./Choose";
+import Choose from "../../../../../components/Choose";
 import { motion } from "framer-motion";
 
 const Card = () => {
