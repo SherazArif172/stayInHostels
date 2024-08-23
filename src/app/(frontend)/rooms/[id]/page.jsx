@@ -62,6 +62,23 @@ const page = ({ params }) => {
             bed
           </div>
         </div>
+        <div>
+          <p>
+            Experience unparalleled comfort and privacy in our Superior Double
+            Bed Private Ensuite. This spacious and elegantly furnished room
+            features a luxurious double bed designed for restful sleep and
+            relaxation. <br />
+            Enjoy the added convenience of a private ensuite bathroom, complete
+            with modern amenities and stylish fixtures, ensuring a serene and
+            comfortable stay. Perfect for both business and leisure travelers
+            seeking a touch of sophistication.
+          </p>
+          <div>
+            <p>
+              <span className="text-5xl font-extrabold">$59</span>/1 night
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
