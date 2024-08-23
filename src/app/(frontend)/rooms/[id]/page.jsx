@@ -18,7 +18,7 @@ const page = ({ params }) => {
   return (
     <div className="max-w-[1920px] m-auto ">
       <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 ">
-        <div className="max-w-5xl m-auto">
+        <div className="max-w-[930px] m-auto">
           <Link href="/" className="text-primary font-semibold">
             Home
           </Link>{" "}
