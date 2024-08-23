@@ -2,7 +2,7 @@ import React from "react";
 import DetailedFacilities from "./_components/DetailedFacilities";
 import Rules from "./_components/Rules";
 import Bookings from "./_components/Bookings";
-import Choose from "../../../../../../../stayInHostels/src/app/(frontend)/_components/rooms/_components/Choose";
+import Choose from "../../../../../../components/Choose";
 import Comments from "./_components/Comments";
 
 const Text = () => {
