@@ -18,16 +18,17 @@ import SideBar from "./_components/SideBar/SideBar";
 const news = () => {
   return (
     <div className=" ">
-      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-7xl m-auto">
-        <Link href="/" className="text-primary font-semibold">
-          Home
-        </Link>{" "}
-        / News
-        <p className="md:text-5xl text-2xl font-semibold mt-2">News</p>
+      <div className="text-lg h-44 bg-primary-bgg md:px-14 px-11 md:py-14 py-10 max-w-[1920px] m-auto">
+        <div className="max-w-[930px] m-auto">
+          <Link href="/" className="text-primary font-extrabold">
+            Home
+          </Link>{" "}
+          / News
+          <p className="md:text-5xl text-2xl font-extrabold mt-2">News</p>
+        </div>
       </div>
       <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-6xl m-auto">
         <div className="mt-8  flex lg:flex-row flex-col  gap-8 ">
-          {/* news  */}
           <div className="max-w-[800px]">
             {" "}
             {Blogss.map((blogs, index) => (
