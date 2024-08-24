@@ -7,8 +7,8 @@ import Comments from "./_components/Comments";
 
 const Text = () => {
   return (
-    <div className=" flex gap-8">
-      <div className="max-w-3xl">
+    <div className=" flex lg:flex-row flex-col gap-8">
+      <div className="md:max-w-3xl">
         <p className="mt-12 ">
           Experience unparalleled comfort and privacy in our Superior Double Bed
           Private Ensuite. This spacious and elegantly furnished room features a

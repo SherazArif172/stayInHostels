@@ -28,17 +28,17 @@ const page = ({ params }) => {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl m-auto py-28">
-        <div className="flex justify-center  gap-7">
+      <div className="lg:max-w-7xl lg:m-auto px-4 py-28">
+        <div className="flex justify-center   lg:gap-7">
           {" "}
           <Image
             src={Bed}
-            width={300}
-            height={300}
+            width={700}
+            height={700}
             alt="image"
-            className="w-full  max-w-3xl"
+            className="w-full  lg:max-w-3xl "
           />
-          <div className="flex flex-col gap-7">
+          <div className="lg:flex flex-col gap-7  hidden">
             <Image
               src={Bathroom}
               width={300}
@@ -55,7 +55,7 @@ const page = ({ params }) => {
             />
           </div>
         </div>
-        <div className="flex pl-14 mt-5 gap-9">
+        <div className="flex lg:pl-14 mt-5 lg:gap-9 gap-3">
           <div className="flex justify-center items-center gap-2">
             <User className="text-primary" /> 3 Sleeps
           </div>
@@ -68,7 +68,7 @@ const page = ({ params }) => {
           </div>
         </div>
         <div>
-          <div className="px-14">
+          <div className="lg:px-14">
             <Text />
             <LeaveComments />
           </div>

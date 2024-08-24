@@ -4,7 +4,7 @@ import React from "react";
 
 const Bookings = () => {
   return (
-    <div className="shadow-custom p-20">
+    <div className="shadow-custom md:p-20 p-10">
       <p>
         <span className="text-5xl font-extrabold text-primary">$59</span>/1
         night

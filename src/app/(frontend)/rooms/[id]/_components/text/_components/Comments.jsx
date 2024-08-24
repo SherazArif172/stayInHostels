@@ -5,9 +5,9 @@ import { Reply } from "lucide-react";
 
 const Comments = () => {
   return (
-    <div className="mt-20">
+    <div className="lg:mt-20 mt-12">
       <p className="text-2xl font-extrabold">Post comments</p>
-      <div className="shadow-custom px-9 py-8">
+      <div className="shadow-custom md:px-9 px-6 py-8">
         <div className="flex justify-between ">
           <div className="flex justify-center items-center gap-8">
             <Image src={Commentsman} width={40} height={40} alt="image" />

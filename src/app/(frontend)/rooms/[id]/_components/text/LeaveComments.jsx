@@ -6,11 +6,11 @@ import React from "react";
 
 const LeaveComments = () => {
   return (
-    <div className="max-w-3xl mt-16">
+    <div className="lg:max-w-3xl mt-16">
       <p className="text-2xl font-extrabold">Leave Comment</p>
-      <div className="grid grid-cols-2 gap-7">
-        <div className="mt-6 flex flex-col gap-4">
-          <div className="flex justify-between">
+      <div className="grid md:grid-cols-2 md:gap-7">
+        <div className="mt-6 flex flex-col gap-4 ">
+          <div className="flex  justify-between">
             Location
             <div className="flex gap-2">
               {Array.from({ length: 5 }, (_, index) => (
