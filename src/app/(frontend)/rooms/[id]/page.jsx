@@ -28,7 +28,7 @@ const page = ({ params }) => {
           </p>
         </div>
       </div>
-      <div className="lg:max-w-7xl lg:m-auto px-4 py-28">
+      <div className="lg:max-w-7xl lg:m-auto px-4 md:py-20 py-16">
         <div className="flex justify-center   lg:gap-7">
           {" "}
           <Image
@@ -76,7 +76,7 @@ const page = ({ params }) => {
       </div>
       <Booking />
       <Stages />
-      <Rooms />
+      {/* <Rooms /> */}
     </div>
   );
 };

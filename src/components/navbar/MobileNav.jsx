@@ -17,9 +17,13 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpened, setIsOpened] = useState(false);
 
   const handleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+  const handleNavbarr = () => {
+    setIsOpened(!isOpened);
   };
 
   return (

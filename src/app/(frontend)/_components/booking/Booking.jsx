@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Booking = () => {
   return (
-    <div className="lg:py-24 py-8 bg-primary-bgg lg:my-28 max-w-[1920px] m-auto">
+    <div className="lg:py-24 py-8 bg-primary-bgg lg:my-16 max-w-[1920px] m-auto">
       <div className="flex lg:flex-row flex-col  lg:py-0 py-4  relative w-full  max-w-7xl m-auto">
         <div className="lg:px-16 px-6 py-16 lg:w-1/2 w-full lg:m-0 m-auto">
           <motion.p

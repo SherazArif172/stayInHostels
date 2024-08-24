@@ -9,10 +9,10 @@ import Link from "next/link";
 const Choose = () => {
   return (
     <motion.div
-      initial={{ x: 150, opacity: 0 }}
+      initial={{ y: 150, opacity: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      whileInView={{ x: 0, opacity: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
       className=" lg:max-w-[360px] lg:mx-0  mt-9 shadow-custom p-11 bg-primary text-white rounded-md"
     >
       <p className="text-4xl font-extrabold ">Stay Longer, Save More</p>
