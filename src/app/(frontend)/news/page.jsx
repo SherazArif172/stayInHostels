@@ -77,7 +77,6 @@ const news = () => {
                       />
                       1 comment
                     </p>
-                    {/* <div></div> */}
                   </div>
                 </div>
               </div>

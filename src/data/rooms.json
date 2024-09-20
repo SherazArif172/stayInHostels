@@ -1,6 +1,7 @@
 [
   {
     "image": "/roomsRout/room1.png",
+    "id": 1,
     "title": "Standard Twin Room Private Shared Bathroom",
     "description": "Comfortable twin beds in a private room with access to a shared bathroom.",
     "sleep": "2 Sleeps",
@@ -11,6 +12,7 @@
   },
   {
     "image": "/roomsRout/room2.png",
+    "id": 2,
     "title": "Standard 6 Bed Female Dorm Shared Bathroom",
     "description": "Spacious dormitory with six beds exclusively for female guests, featuring shared bathroom facilities.",
     "sleep": "2 Sleeps",
@@ -21,6 +23,7 @@
   },
   {
     "image": "/roomsRout/room3.png",
+    "id": 3,
     "title": "Comfort Superior Double Bed Private Ensuite",
     "description": "Elegant double bed room with a private ensuite bathroom for added convenience.",
     "sleep": "3 Sleeps",
@@ -31,6 +34,7 @@
   },
   {
     "image": "/roomsRout/room4.png",
+    "id": 4,
     "title": "Standard Triple Room with Shared Bathroom",
     "description": "Cozy triple room perfect for families or friends, with access to a shared bathroom.",
     "sleep": "2 Sleeps",
@@ -41,6 +45,7 @@
   },
   {
     "image": "/roomsRout/room5.png",
+    "id": 5,
     "title": "Standard Double Bed Private Shared Bathroom",
     "description": "Inviting double bed room offering privacy with access to a shared bathroom.",
     "sleep": "1 adult",

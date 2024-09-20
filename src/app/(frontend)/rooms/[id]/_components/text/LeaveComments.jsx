@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { MailOpen, Star, User } from "lucide-react";
 import React from "react";
+import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Form from "@/components/Form/Form";
 
 const LeaveComments = () => {
   return (
@@ -62,21 +61,8 @@ const LeaveComments = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
-        <div className="flex sm:flex-row flex-col gap-6">
-          <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
-            <Input type="email" placeholder="Email" /> <User strokeWidth={1} />
-          </div>
-          <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
-            <Input type="email" placeholder="Email" />{" "}
-            <MailOpen strokeWidth={1} />
-          </div>
-        </div>
-        <div className="mt-10">
-          <Textarea placeholder="Message" />
-        </div>
-        <Button className="mt-8">Submit</Button>
-      </div>
+      <Form />
+      <Button className="mt-8">Submit</Button>
     </div>
   );
 };

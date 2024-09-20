@@ -36,7 +36,7 @@ const RoomCards = () => {
                 <div className="mt-6">
                   {" "}
                   <Link
-                    href="/rooms"
+                    href={`/rooms/${room.id}`}
                     className="font-extrabold text-2xl hover:text-primary duration-300 "
                   >
                     {room.title}

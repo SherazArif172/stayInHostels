@@ -76,7 +76,7 @@ const page = ({ params }) => {
       </div>
       <Booking />
       <Stages />
-      {/* <Rooms /> */}
+      <Rooms />
     </div>
   );
 };
