@@ -29,16 +29,16 @@ const page = ({ params }) => {
         </div>
       </div>
       <div className="lg:max-w-7xl lg:m-auto px-4 md:py-20 py-16">
-        <div className="flex justify-center   lg:gap-7">
+        <div className="flex justify-center lg:gap-7 w-full mb-14">
           {" "}
           <Image
             src={Bed}
-            width={700}
-            height={700}
+            width={1000}
+            height={1000}
             alt="image"
             className="w-full  lg:max-w-3xl "
           />
-          <div className="lg:flex flex-col gap-7  hidden">
+          {/* <div className="lg:flex flex-col gap-7  hidden">
             <Image
               src={Bathroom}
               width={300}
@@ -53,7 +53,7 @@ const page = ({ params }) => {
               alt="image"
               className="w-full rounded-lg "
             />
-          </div>
+          </div> */}
         </div>
         <div className="flex lg:pl-14 mt-5 lg:gap-9 gap-3">
           <div className="flex justify-center items-center gap-2">
