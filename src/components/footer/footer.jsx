@@ -46,7 +46,6 @@ const footer = () => {
                   <Phone />
                   <p className="lg:text-base text-sm">
                     +923310008196 <br />
-                    +923118100096
                   </p>
                 </li>
               </ul>
@@ -54,7 +53,8 @@ const footer = () => {
             <div className=" ">
               <p className="lg:text-2xl text-xl font-extrabold">Follow Us</p>
               <p className="md:mt-6 mt-3 md:text-base text-sm">
-                Venenatis urna cursus eget nunc scelerisque
+                Follow us on social media for updates and offers. Join our
+                community!
               </p>
               <div className="flex gap-4 clear-start md:mt-8 mt-4">
                 <Link href="https://web.facebook.com/stayinnhostels">

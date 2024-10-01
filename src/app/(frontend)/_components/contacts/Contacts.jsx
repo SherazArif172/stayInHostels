@@ -46,7 +46,6 @@ const Contacts = () => {
                 <p className="text-2xl font-extrabold">Phone</p>
                 <p className="mt-1">
                   +923310008196 <br />
-                  +923118100096
                 </p>
               </div>
             </div>
@@ -102,8 +101,8 @@ const Contacts = () => {
               <div className="w-44">
                 <p className="text-2xl font-extrabold">Location</p>
                 <p className="mt-1">
-                  behria town ma
-                  <br /> (Lahore)
+                  Bahadrabad, Lahore,
+                  <br /> (Punjab)
                 </p>
               </div>
             </div>

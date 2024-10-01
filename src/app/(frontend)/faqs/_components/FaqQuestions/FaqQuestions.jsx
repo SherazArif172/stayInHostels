@@ -26,8 +26,7 @@ const FaqQuestions = () => {
         <div className="mt-10">
           <div className="flex sm:flex-row flex-col gap-6">
             <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
-              <Input type="email" placeholder="Email" />{" "}
-              <User strokeWidth={1} />
+              <Input type="text" placeholder="Name" /> <User strokeWidth={1} />
             </div>
             <div className="border w-full px-5 border-black rounded-lg flex justify-between items-center">
               <Input type="email" placeholder="Email" />{" "}
