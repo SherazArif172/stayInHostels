@@ -30,8 +30,9 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Egestas pretium aenean pharetra magna ac. Et tortor consequat id
-            porta nibh venenatis cras sed. Vel turpis nunc eget lorem dolor sed
+            Where comfort meets community, offering a welcoming space for
+            free-spirited travelers to connect, explore, and create
+            unforgettable memories together.
           </motion.p>
         </div>
       </div>
