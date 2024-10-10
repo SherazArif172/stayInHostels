@@ -98,10 +98,10 @@ const Booking = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ x: 150, opacity: 0.5 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="absolute top-72 right-[470px] lg:block hidden"
         >
           <Family />
