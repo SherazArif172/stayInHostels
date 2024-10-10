@@ -12,19 +12,19 @@ import { motion } from "framer-motion";
 
 const Faqs = () => {
   return (
-    <div className="md:px-16 px-4 lg:py-16 py-8 m-auto max-w-7xl">
-      <div className="flex lg:flex-row flex-col justify-between lg:gap-40">
+    <div className="md:px-16 px-4 lg:py-16 py-8 m-auto max-w-7xl ">
+      <div className="flex lg:flex-row flex-col justify-between items-center lg:gap-10 mb-6">
         <motion.p
-          initial={{ x: -150, opacity: 0.5 }}
+          initial={{ opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="md:text-4xl text-3xl font-extrabold"
         >
-          Frequently asked questions about hostel
+          Frequently asked questions
         </motion.p>
         <motion.p
-          initial={{ x: 150, opacity: 0.5 }}
+          initial={{ opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}

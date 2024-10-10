@@ -15,10 +15,10 @@ const Owner = () => {
       <div className="max-w-6xl m-auto">
         <div className="flex md:flex-row flex-col md:items-center gap-10">
           <motion.div
-            initial={{ x: -150, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="relative md:w-44 w-40 aspect-square rounded-full "
           >
             <Image
@@ -30,20 +30,20 @@ const Owner = () => {
           </motion.div>
           <div className="md:w-4/6">
             <motion.p
-              initial={{ x: 150, opacity: 0.5 }}
+              initial={{ opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.7 }}
               className="font-extrabold text-xl"
             >
               “ Founded with a vision to make comfortable and affordable hostel
               stays accessible to every traveler. “
             </motion.p>
             <motion.div
-              initial={{ x: 150, opacity: 0.5 }}
+              initial={{ opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.7 }}
               className="flex md:flex-row flex-col mt-2 md:gap-11 "
             >
               <p>Sajjad Arif Bhatti</p>
@@ -53,10 +53,10 @@ const Owner = () => {
         </div>
         <div className="mt-10 flex md:flex-row flex-col md:gap-16 gap-8">
           <motion.div
-            initial={{ x: 150, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="md:pl-8 pl-4 border-l-2 border-primary md:w-1/2"
           >
             <p className="font-extrabold text-xl ">
@@ -71,10 +71,10 @@ const Owner = () => {
             </Link>{" "}
           </motion.div>
           <motion.div
-            initial={{ x: 150, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="w-1/2"
           >
             <p className="text-xl font-extrabold">Newsletter</p>

@@ -56,10 +56,10 @@ const page = () => {
           </Select>
         </div> */}
         <motion.p
-          initial={{ x: 150, opacity: 0.5 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="sm:text-4xl text-2xl font-extrabold text-center"
         >
           Frequently asked questions

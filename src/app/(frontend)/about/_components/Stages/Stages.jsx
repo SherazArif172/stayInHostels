@@ -13,10 +13,10 @@ const Stages = () => {
     <div className="flex lg:flex-row flex-col md:gap-16 gap-9 lg:px-16 px-4 lg:py-16 py-6 m-auto max-w-7xl ">
       <div className="w-full ">
         <motion.p
-          initial={{ x: -150, opacity: 0.5 }}
+          initial={{ opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="md:text-4xl text-3xl font-extrabold"
         >
           Stages of booking a room

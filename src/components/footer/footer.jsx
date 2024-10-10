@@ -96,7 +96,7 @@ const footer = () => {
         </div>
       </div>
       <div className="min-h-[82px] bg-white flex justify-center items-center md:text-base text-sm text-center">
-        merkulov © ClockInn Hostel Template all rights reserved Copyrights 2021
+        stay inn hostels © All rights reserved. Copyrights 2024
       </div>
     </footer>
   );

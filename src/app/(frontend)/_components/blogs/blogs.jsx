@@ -13,19 +13,19 @@ const blogs = () => {
     <div className="lg:px-16 px-4 lg:py-16 py-8 max-w-7xl m-auto">
       <div className="flex justify-between">
         <motion.p
-          initial={{ x: -150, opacity: 0.5 }}
+          initial={{ opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="text-4xl font-extrabold "
         >
           ClockInn news
         </motion.p>
         <motion.div
-          initial={{ x: 150, opacity: 0.5 }}
+          initial={{ opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
         >
           <Link href={"/news"}>
             <Button className="bg-primary-cstm text-primary font-extrabold">

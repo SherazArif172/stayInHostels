@@ -40,10 +40,10 @@ const FaqQuestions = () => {
         <Button className="mt-10 sm:w-auto w-full">Send message</Button>
       </motion.div>
       <motion.div
-        initial={{ x: 150, opacity: 0.5 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.7 }}
         className="relative lg:aspect-[10/12] aspect-video w-full rounded-lg overflow-hidden"
       >
         <Image

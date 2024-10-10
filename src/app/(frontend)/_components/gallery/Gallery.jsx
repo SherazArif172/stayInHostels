@@ -16,27 +16,27 @@ const Gallery = () => {
     <div className="lg:py-16 py-8 lg:px-14 px-4 m-auto max-w-7xl">
       <div className="flex justify-between items-center">
         <motion.p
-          initial={{ x: -150, opacity: 0.5 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="md:text-4xl text-2xl font-extrabold "
         >
           {" "}
           Photos of our rooms
         </motion.p>
         <motion.div
-          initial={{ x: 150, opacity: 0.5 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
         >
           <Button>View all photos</Button>
         </motion.div>
       </div>
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-11 mt-8">
         <motion.div
-          initial={{ scale: 0.5, opacity: 0.5 }}
+          initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
@@ -58,7 +58,7 @@ const Gallery = () => {
         </motion.div>
         <div className="flex flex-col gap-11">
           <motion.div
-            initial={{ scale: 0.5, opacity: 0.5 }}
+            initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
@@ -80,7 +80,7 @@ const Gallery = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ scale: 0.5, opacity: 0.5 }}
+            initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
@@ -102,7 +102,7 @@ const Gallery = () => {
           </motion.div>
         </div>
         <motion.div
-          initial={{ scale: 0.5, opacity: 0.5 }}
+          initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
