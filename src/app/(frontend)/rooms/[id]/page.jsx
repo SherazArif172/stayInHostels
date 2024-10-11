@@ -29,7 +29,7 @@ const page = ({ params }) => {
         </div>
       </div>
       <div className="lg:max-w-7xl lg:m-auto px-4 md:py-20 py-16">
-        <div className="flex justify-center lg:gap-7 w-full mb-14">
+        <div className="flex  lg:gap-7 w-full mb-14">
           {" "}
           <Image
             src={Bed}
@@ -68,7 +68,7 @@ const page = ({ params }) => {
           </div>
         </div>
         <div>
-          <div className="lg:px-14">
+          <div className="">
             <Text />
             <LeaveComments />
           </div>
