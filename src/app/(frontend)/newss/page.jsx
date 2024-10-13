@@ -17,9 +17,9 @@ export default function TravelBlog() {
             />
             <div className="mt-4 text-sm text-gray-500">
               <span>June 16, 2021</span>
-              <span className="mx-2">•</span>
+              <span className="mx-2">&bull;</span>
               <span>120 views</span>
-              <span className="mx-2">•</span>
+              <span className="mx-2">&bull;</span>
               <span>1 comment</span>
             </div>
             <p className="mt-4 text-gray-700">
