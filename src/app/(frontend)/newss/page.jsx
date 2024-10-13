@@ -17,9 +17,9 @@ export default function TravelBlog() {
             />
             <div className="mt-4 text-sm text-gray-500">
               <span>June 16, 2021</span>
-              <span className="mx-2">&bull;</span>
+              <span className="mx-2">•</span>
               <span>120 views</span>
-              <span className="mx-2">&bull;</span>
+              <span className="mx-2">•</span>
               <span>1 comment</span>
             </div>
             <p className="mt-4 text-gray-700">
@@ -50,10 +50,10 @@ export default function TravelBlog() {
 
           <p className="text-gray-700">
             Volunteering abroad provides a chance to give back to the world and
-            learn from different cultures. Whether you're interested in teaching
-            English, working with children, or participating in environmental
-            conservation projects, there are countless opportunities to make a
-            meaningful difference.
+            learn from different cultures. Whether you&apos;re interested in
+            teaching English, working with children, or participating in
+            environmental conservation projects, there are countless
+            opportunities to make a meaningful difference.
           </p>
 
           {/* Additional content to ensure main area is scrollable */}
@@ -118,7 +118,7 @@ export default function TravelBlog() {
                       <h4 className="font-medium">
                         Travel and Working Holidays
                       </h4>
-                      <p className="text-sm text-gray-500">June 16, 2021</p>
+                      <p className="text-sm text-gray-500">June 16, 2022</p>
                     </div>
                   </div>
                 ))}
