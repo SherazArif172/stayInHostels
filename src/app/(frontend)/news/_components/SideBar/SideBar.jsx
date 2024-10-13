@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const SideBar = () => {
   return (
-    <div className="lg:max-w-[350px] w-full shadow-custom px-7 mt-7 py-7  lg:sticky lg:top-8 lg:self-start lg:overflow-y-auto lg:max-h-[calc(100vh-4rem)]">
+    <div className="lg:max-w-[350px] w-full shadow-custom px-7 mt-7 py-7  lg:sticky lg:top-8 lg:self-start  lg:max-h-[calc(100%-4rem)]">
       {" "}
       <div className="border border-black md:mt-10 mt-7 md:w-full w-full rounded-lg px-4 flex bg-white items-center ">
         <Input placeholder="search" />
