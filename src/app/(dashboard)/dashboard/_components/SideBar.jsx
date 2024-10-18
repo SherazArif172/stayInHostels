@@ -1,53 +1,107 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Home, Settings, Users, X } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import * as React from "react";
+import navItems from "../../../../data/sidebar.json";
+import NavImg from "../../../../../public/navbar/footer.png";
 
-const SideBar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+import {
+  Home,
+  Users,
+  Folder,
+  Calendar,
+  FileText,
+  BarChart,
+} from "lucide-react";
+import Image from "next/image";
 
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
-
-  return (
-    <div>
-      <aside
-        className={`${
-          sidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 text-white transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0`}
-      >
-        <div className="flex items-center justify-between p-4">
-          <span className="text-2xl font-semibold">Admin Panel</span>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="lg:hidden"
-            onClick={toggleSidebar}
-          >
-            <X className="h-6 w-6" />
-          </Button>
-        </div>
-        <nav className="mt-8">
-          <NavItem icon={<Home className="h-5 w-5" />} label="Home" />
-          <NavItem icon={<Users className="h-5 w-5" />} label="Users" />
-          <NavItem icon={<Settings className="h-5 w-5" />} label="Settings" />
-        </nav>
-      </aside>
-    </div>
-  );
+const icons = {
+  Home,
+  Users,
+  Folder,
+  Calendar,
+  FileText,
+  BarChart,
 };
 
-export default SideBar;
+export default function SideBar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-function NavItem({ icon, label }) {
   return (
-    <Link
-      href="#"
-      className="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white transition-colors duration-200"
-    >
-      {icon}
-      <span className="ml-3">{label}</span>
-    </Link>
+    <>
+      <button
+        className="absolute top-4 left-4 z-50 p-2 bg-gray-800 rounded-md lg:hidden"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? (
+          <X className="w-6 h-6 text-white" />
+        ) : (
+          <Menu className="w-6 h-6 text-white" />
+        )}
+      </button>
+
+      <aside
+        className={` z-40 w-64  h-[calc(100vh-64px)] overflow-hidden flex flex-col transition-transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:translate-x-0 bg-gray-900 text-white`}
+      >
+        <div className="flex items-center px-8 py-5 mb-2 font-bold text-2xl">
+          <p className="lg:block hidden">Dashboard</p>
+          <Image
+            src={NavImg}
+            width={140}
+            height={140}
+            className="lg:hidden block"
+            alt="image"
+          />
+        </div>
+
+        <nav className="px-3 py-4 flex-grow overflow-y-auto">
+          {navItems.map((item, index) => {
+            const Icon = icons[item.icon];
+            return (
+              <Link
+                key={index}
+                href="#"
+                className="flex items-center px-4 py-2 text-gray-300 rounded-lg hover:bg-gray-700"
+              >
+                <div key={item.name} className="flex items-center p-2">
+                  <Icon className="w-6 h-6 mr-2" />
+                  <span>{item.name}</span>
+                </div>
+              </Link>
+            );
+          })}
+
+          {/* <div className="mt-8">
+            <h3 className="px-4 text-sm font-semibold text-gray-400 uppercase">
+              Your teams
+            </h3>
+            {teams.map((team) => (
+              <Link
+                key={team.name}
+                href="#"
+                className="flex items-center px-4 py-2 mt-1 text-gray-300 rounded-lg hover:bg-gray-700"
+              >
+                <span className="w-6 h-6 mr-3 text-sm font-medium text-gray-300 bg-gray-700 rounded-full flex items-center justify-center">
+                  {team.initial}
+                </span>
+                {team.name}
+              </Link>
+            ))}
+          </div> */}
+
+          <Link
+            href="#"
+            className="flex items-center px-4 py-2 mt-8 text-gray-300 rounded-lg hover:bg-gray-700"
+          >
+            <span className="mr-3">⚙️</span>
+            Settings
+          </Link>
+        </nav>
+      </aside>
+    </>
   );
 }

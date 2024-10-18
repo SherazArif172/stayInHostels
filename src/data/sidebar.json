@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "Home"
+  },
+  {
+    "name": "Team",
+    "icon": "Users"
+  },
+  {
+    "name": "Projects",
+    "icon": "Folder"
+  },
+  {
+    "name": "Calendar",
+    "icon": "Calendar"
+  },
+  {
+    "name": "Documents",
+    "icon": "FileText"
+  },
+  {
+    "name": "Reports",
+    "icon": "BarChart"
+  }
+]

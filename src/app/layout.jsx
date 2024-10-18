@@ -19,7 +19,9 @@ const mulish = Mulish({
 });
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname("/dashboard"); // Get the current pathname
+  const pathname = usePathname(); // Get the current pathname
+
+  const isDashboardRoute = pathname.startsWith("/dashboard");
 
   return (
     <html lang="en">
@@ -32,9 +34,9 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={mulish.className}>
-        {pathname !== "/dashboard" && <Navbar />}
+        {!isDashboardRoute && <Navbar />}
         {children}
-        {pathname !== "/dashboard" && <Footer />}
+        {!isDashboardRoute && <Footer />}
       </body>
     </html>
   );

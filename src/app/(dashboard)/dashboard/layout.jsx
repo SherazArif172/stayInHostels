@@ -1,14 +1,19 @@
+// "use client";
+
 import React from "react";
 import Navbar from "../dashboard/_components/Navbar";
 import SideBar from "./_components/SideBar";
-import { Sidebar } from "lucide-react";
 
 const RootLayout = ({ children }) => {
   return (
-    <div lang="en">
+    <div>
       <Navbar />
-      {/* <Sidebar /> */}
-      {children}
+      <div className="flex">
+        <div className="">
+          <SideBar />
+        </div>
+        <main className="w-full p-6">{children}</main>
+      </div>
     </div>
   );
 };
