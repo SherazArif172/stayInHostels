@@ -18,8 +18,12 @@ LoadData();
 export async function GET(req) {
   try {
     const url = new URL(req.url); // Create a URL instance from req.url
+
     const blogId = url.searchParams.get("id");
+    console.log(blogId);
+
     if (blogId) {
+      console.log(blogId);
       const blog = await Post.findById(blogId);
       return NextResponse.json(blog);
     } else {
@@ -49,7 +53,7 @@ export async function POST(req) {
   const blogData = {
     imageUrl: `${imgUrl}`,
     title: `${formData.get("title")}`,
-    content: `${formData.get("content")}`,
+    content: `${formData.get("description")}`,
     category: `${formData.get("category")}`,
   };
 
@@ -64,9 +68,15 @@ export async function DELETE(req) {
     const url = new URL(req.url); // Create a URL instance from req.url
     const blogId = url.searchParams.get("id");
     const blog = await Post.findById(blogId);
+
+    if (!blog) {
+      console.error("Blog not found");
+      return NextResponse.json({ error: "Blog not found" }, { status: 404 });
+    }
+
     fs.unlink(`./public/${blog.image}`, () => {});
     await Post.findByIdAndDelete(blogId);
-    return NextResponse.json({ msg: "blogdeleted" });
+    return NextResponse.json({ msg: "Blog deleted" });
   } catch (error) {
     console.error(error);
     return NextResponse.json(
