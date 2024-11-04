@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -53,16 +53,19 @@ const formSchema = z.object({
       (file) => ACCEPTED_IMAGE_TYPES.includes(file?.type),
       "Only .jpg, .jpeg, .png, and .webp formats are supported."
     ),
-  category: z.enum(["light", "dark", "system"], {
-    errorMap: () => ({ message: "Category is required" }),
+  sleeps: z.enum(["2 sleeps", "3 sleeps", "4 sleeps"], {
+    errorMap: () => ({ message: "Sleep is required" }),
+  }),
+  beds: z.enum(["2 beds", "3 beds", "4 beds"], {
+    errorMap: () => ({ message: "Bed is required" }),
   }),
 });
 
-const Page = () => {
-  const [file, setFile] = useState(null);
-  const [selectedTheme, setSelectedTheme] = useState("");
+const Page = ({ params }) => {
+  const [room, setRoom] = useState(null);
+  const id = params.id;
+  console.log(id);
   const fileInputRef = useRef(null);
-
   const { toast } = useToast();
   const router = useRouter();
 
@@ -71,19 +74,33 @@ const Page = () => {
     defaultValues: {
       title: "",
       description: "",
+      sleeps: "",
+      beds: "",
     },
   });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(`http://localhost:3000/api/room?id=${id}`);
+        setRoom(res.data.room);
+      } catch (error) {
+        console.log(error, "error ");
+      }
+    };
+    fetchData();
+  }, [id, form]);
 
   const onSubmit = async (data) => {
     const formData = new FormData();
     formData.append("title", data.title);
     formData.append("description", data.description);
-    formData.append("image", file);
-    formData.append("theme", selectedTheme);
-
+    formData.append("image", data.image); // Directly from form data
+    formData.append("sleeps", data.sleeps);
+    formData.append("beds", data.beds);
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/blog",
+      const response = await axios.put(
+        `http://localhost:3000/api/room?id=${_id}`,
         formData,
         {
           headers: {
@@ -94,46 +111,49 @@ const Page = () => {
 
       if (response.status === 200) {
         form.reset();
-        form.setValue("category", "");
-        setFile(null);
-        setSelectedTheme("");
-
         if (fileInputRef.current) {
           fileInputRef.current.value = "";
         }
-
-        console.log("Success:", response.data);
+        toast({
+          title: "Success",
+          description: "Room updated successfully!",
+          style: {
+            background: "green",
+            color: "white",
+          },
+        });
+        router.push("/admin/all-rooms");
       } else {
-        console.log("Failed response:", response.statusText);
+        toast({
+          title: "Error",
+          description: "Failed to update room.",
+          style: {
+            background: "red",
+            color: "white",
+          },
+        });
       }
-
-      toast({
-        title: "Success",
-        description: "Blog added successfully!",
-        style: {
-          background: "green",
-          color: "white",
-        },
-      });
-
-      router.push("/admin/all-blogs");
     } catch (error) {
-      console.log(error, "not submitted");
+      console.error("Error updating room:", error);
       toast({
         title: "Error",
-        description: "Failed to add blog.",
+        description: "Failed to update room.",
         style: {
-          background: "red", // Custom background color for success
-          color: "white", // Text color
+          background: "red",
+          color: "white",
         },
       });
     }
   };
 
+  if (!room) {
+    return <div>Loading...</div>; // Optional loading state
+  }
+
   return (
-    <div className="my-10 max-w-5xl m-auto ">
+    <div className="my-10 max-w-5xl m-auto">
       <div className="flex justify-between items-center mb-10">
-        <h1 className="font-bold text-3xl text-center">Create Blog</h1>
+        <h1 className="font-bold text-3xl text-center">Edit Room</h1>
         <Link href="/admin">
           <Button>Back</Button>
         </Link>
@@ -179,9 +199,8 @@ const Page = () => {
                 <FormLabel>Image</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="name"
                     type="file"
-                    ref={fileInputRef}
+                    // ref={fileInputRef}
                     onChange={(e) => {
                       field.onChange(e.target.files[0]);
                       setFile(e.target.files[0]);
@@ -194,24 +213,38 @@ const Page = () => {
           />
           <FormField
             control={form.control}
-            name="category"
+            name="sleeps"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Category</FormLabel>
-                <Select
-                  onValueChange={(value) => {
-                    field.onChange(value);
-                    setSelectedTheme(value);
-                  }}
-                  value={field.value}
-                >
+                <FormLabel>Sleeps</FormLabel>
+                <Select onValueChange={field.onChange} value={field.value}>
                   <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder="Select a category" />
+                    <SelectValue placeholder="Select Sleeps" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="light">Science</SelectItem>
-                    <SelectItem value="dark">Tour</SelectItem>
-                    <SelectItem value="system">Asthatic</SelectItem>
+                    <SelectItem value="2 sleeps">2 Sleeps</SelectItem>
+                    <SelectItem value="3 sleeps">3 Sleeps</SelectItem>
+                    <SelectItem value="4 sleeps">4 Sleeps</SelectItem>
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="beds"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Beds</FormLabel>
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Select Beds" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="2 beds">2 Beds</SelectItem>
+                    <SelectItem value="3 beds">3 Beds</SelectItem>
+                    <SelectItem value="4 beds">4 Beds</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />

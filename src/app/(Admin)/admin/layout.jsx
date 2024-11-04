@@ -4,8 +4,15 @@ import * as React from "react";
 import {
   Check,
   ChevronsUpDown,
+  FileText,
   GalleryVerticalEnd,
+  icons,
+  LayoutDashboard,
+  List,
+  Newspaper,
   Search,
+  SquarePen,
+  House,
 } from "lucide-react";
 
 import {
@@ -40,7 +47,7 @@ import {
   SidebarRail,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Bell, Menu, User } from "lucide-react";
+import { Bell, Menu, User, Room } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Navimgg from "../../../../public/navbar/Frame.png";
@@ -59,68 +66,32 @@ const data = {
         {
           title: "Create News",
           url: "/admin/create",
+          icon: <SquarePen />,
         },
         {
           title: "All News",
           url: "/admin/all-blogs",
+          icon: <List />,
+          // icon: <Newspaper />,
         },
       ],
     },
-    // {
-    //   title: "Building Your Application",
-    //   url: "#",
-    //   items: [
-    //     {
-    //       title: "Routing",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Data Fetching",
-    //       url: "#",
-    //       isActive: true,
-    //     },
-    //     {
-    //       title: "Rendering",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Caching",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Styling",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Optimizing",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Configuring",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Testing",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Authentication",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Deploying",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Upgrading",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Examples",
-    //       url: "#",
-    //     },
-    //   ],
-    // },
+    {
+      title: "Rooms",
+      url: "#",
+      items: [
+        {
+          title: "All Rooms",
+          url: "/admin/all-rooms",
+          // icon: <Room />,
+          // icon: <Newspaper />,
+        },
+        {
+          title: "Add Room",
+          url: "/admin/create-room",
+        },
+      ],
+    },
     // {
     //   title: "API Reference",
     //   url: "#",
@@ -206,20 +177,32 @@ const layout = ({ children }) => {
                 </SidebarGroupContent>
               </SidebarGroup>
             </form> */}
-            <Link href="/">
-              <p className="font-bold text-3xl">Dashboard</p>
+            <Link href="/admin">
+              <p className="text-primary font-extrabold text-2xl flex justify-center items-center gap-2">
+                <LayoutDashboard /> Dashboard
+              </p>
             </Link>
           </SidebarHeader>
           <SidebarContent>
             {data.navMain.map((item) => (
               <SidebarGroup key={item.title}>
-                <SidebarGroupLabel>{item.title}</SidebarGroupLabel>
+                <SidebarGroupLabel>
+                  <p className="text-lg font-extrabold">{item.title}</p>
+                </SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     {item.items.map((item) => (
                       <SidebarMenuItem key={item.title}>
                         <SidebarMenuButton asChild isActive={item.isActive}>
-                          <a href={item.url}>{item.title}</a>
+                          <Link
+                            href={item.url}
+                            className="flex gap-2 w-full h-full "
+                          >
+                            <p className="">{item.icon}</p>
+                            <p className="text-md font-bold self-center hover:text-primary transition-all duration-400">
+                              {item.title}
+                            </p>
+                          </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                     ))}

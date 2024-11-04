@@ -16,7 +16,7 @@ const Page = () => {
   const { toast } = useToast();
 
   useEffect(() => {
-    const formData = async () => {
+    const formData = async (_id) => {
       try {
         const response = await axios.get(`http://localhost:3000/api/blog`);
         setBlogs(response.data.blogs);
@@ -62,7 +62,7 @@ const Page = () => {
       <div className="mt-8  grid lg:grid-cols-2  ">
         {blogs.map((blog) => (
           <article
-            className="max-w-xs mx-auto mb-7 bg-white rounded-lg overflow-hidden shadow-lg"
+            className="max-w-3xl mx-auto mb-7 bg-white rounded-lg overflow-hidden shadow-lg"
             key={blog._id}
           >
             <div className="relative h-64 w-full ">
@@ -80,9 +80,12 @@ const Page = () => {
                 <span>{blog.category}</span>
               </div>
               <div className="">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 line-clamp-1 w-full">
+                <Link
+                  href={`all-blogs/${blog._id}`}
+                  className="text-2xl font-bold text-gray-900 mb-4 line-clamp-1 w-full hover:text-primary transition-all duration-400"
+                >
                   {blog.title}
-                </h2>
+                </Link>
                 <p className="text-gray-700 mb-6 line-clamp-1 w-full">
                   {blog.content}
                 </p>
