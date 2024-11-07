@@ -22,6 +22,14 @@ const roomSchema = new mongoose.Schema({
     type: String, // Number of beds in the room
     required: [true, "Please add beds for the post"],
   },
+  oneNight: {
+    type: Number, // price for one night
+    required: [true, "Please add beds for the post"],
+  },
+  sevenNights: {
+    type: Number, // price for seven nights
+    required: [true, "Please add beds for the post"],
+  },
 });
 
 export default mongoose.models.Room || mongoose.model("Room", roomSchema);

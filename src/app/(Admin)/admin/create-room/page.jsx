@@ -59,6 +59,12 @@ const formSchema = z.object({
   beds: z.enum(["2 beds", "3 beds", "4 beds"], {
     errorMap: () => ({ message: "Bed is required" }),
   }),
+  oneNight: z.coerce
+    .number()
+    .positive({ message: "One night price must be greater than 0" }),
+  sevenNights: z.coerce
+    .number()
+    .positive({ message: "Seven nights price must be greater than 0" }),
 });
 
 const Page = () => {
@@ -75,6 +81,8 @@ const Page = () => {
       description: "",
       sleeps: "",
       beds: "",
+      oneNight: 0,
+      sevenNights: 0,
     },
   });
 
@@ -82,9 +90,11 @@ const Page = () => {
     const formData = new FormData();
     formData.append("title", data.title);
     formData.append("description", data.description);
-    formData.append("image", data.image); // Directly from form data
-    formData.append("sleeps", data.sleeps); // Use correct field names
-    formData.append("beds", data.beds); // Use correct field names
+    formData.append("image", data.image);
+    formData.append("sleeps", data.sleeps);
+    formData.append("beds", data.beds);
+    formData.append("oneNight", data.oneNight);
+    formData.append("sevenNights", data.sevenNights);
 
     try {
       const response = await axios.post(
@@ -145,7 +155,9 @@ const Page = () => {
             name="title"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Title</FormLabel>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Title
+                </FormLabel>
                 <FormControl>
                   <Input placeholder="title" type="text" {...field} />
                 </FormControl>
@@ -158,7 +170,9 @@ const Page = () => {
             name="description"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Description</FormLabel>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Description
+                </FormLabel>
                 <FormControl>
                   <textarea
                     placeholder="Enter a description"
@@ -176,7 +190,9 @@ const Page = () => {
             name="image"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Image</FormLabel>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Image
+                </FormLabel>
                 <FormControl>
                   <Input
                     type="file"
@@ -196,7 +212,9 @@ const Page = () => {
             name="sleeps"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Sleeps</FormLabel>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Sleeps
+                </FormLabel>
                 <Select onValueChange={field.onChange} value={field.value}>
                   <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Select Sleeps" />
@@ -216,7 +234,9 @@ const Page = () => {
             name="beds"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Beds</FormLabel>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Beds
+                </FormLabel>
                 <Select onValueChange={field.onChange} value={field.value}>
                   <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Select Beds" />
@@ -227,6 +247,37 @@ const Page = () => {
                     <SelectItem value="4 beds">4 Beds</SelectItem>
                   </SelectContent>
                 </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="oneNight"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Price For one Night
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="one Night" type="number" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="sevenNights"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="font-bold text-lg text-primary">
+                  Price For Seven Nights
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="Seven Nights" type="number" {...field} />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}

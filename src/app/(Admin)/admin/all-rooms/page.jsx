@@ -84,8 +84,8 @@ const Page = () => {
                     {room.title}{" "}
                   </Link>
                 </div>
-                <p className=" mt-4 text-lg line-clamp-1">{room.description}</p>
-                <div className="flex gap-10 mt-4">
+                <p className=" mt-2 text-lg line-clamp-1">{room.description}</p>
+                <div className="flex gap-10 mt-0">
                   <div className="flex gap-1 justify-center items-center h-[50px]">
                     <User strokeWidth={1} className="w-5" />
                     <p className="">{room.sleeps}</p>
@@ -95,12 +95,23 @@ const Page = () => {
                     <p className=" ">{room.beds}</p>
                   </div>
                 </div>
+                <div className="flex gap-10 mt-0">
+                  <p className="md:text-2xl text-primary text-xl font-extrabold mt-1">
+                    ${room.oneNight}{" "}
+                    <span className="text-base font-normal"> / 1 night</span>
+                  </p>
+                  <p className="md:text-2xl text-primary text-xl font-extrabold mt-1">
+                    ${room.sevenNights}{" "}
+                    <span className="text-base font-normal"> / 7 nights</span>
+                  </p>
+                </div>
               </div>
               <div className="lg:flex lg:justify-center lg:w-auto  w-full">
                 <div className="w-full  md:text-end  ">
                   {/* <p className="md:text-3xl text-3xl font-extrabold mt-6">
-                offer <span className="text-base font-normal"> / 1 night</span>
-              </p> */}
+                    offer{" "}
+                    <span className="text-base font-normal"> / 1 night</span>
+                  </p> */}
                   {/* <p className="font-extrabold text-2xl mt-6 text-foreground/70">
                 offer 2<span className="text-base font-normal">/ 7 nights</span>
               </p> */}

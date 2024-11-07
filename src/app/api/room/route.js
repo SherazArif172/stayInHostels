@@ -52,6 +52,8 @@ export async function POST(req) {
     description: `${formData.get("description")}`,
     sleeps: `${formData.get("sleeps")}`,
     beds: `${formData.get("beds")}`,
+    oneNight: `${formData.get("oneNight")}`,
+    sevenNights: `${formData.get("sevenNights")}`,
   };
 
   await Room.create(roomData);
@@ -129,7 +131,8 @@ export async function PUT(req) {
     room.sleeps = formData.get("sleeps") || room.sleeps;
     room.beds = formData.get("beds") || room.beds;
     room.image = imgUrl;
-
+    room.oneNight = FormData.get("oneNight") || room.oneNight;
+    room.sevenNights = FormData.get("sevenNights") || room.sevenNights;
     await room.save();
     console.log("Room data has been updated");
 
